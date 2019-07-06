@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/mainBackgroundColor"
-    tools:context=".Activity.MainActivity">
+    tools:context=".activity.MainActivity">
 
     <TextView
         android:id="@+id/textView"
@@ -33,26 +33,26 @@
         app:layout_constraintBottom_toBottomOf="parent">
 
         <RadioButton
-            android:id="@+id/today_tab"
+            android:id="@+id/main_tab"
             style="@style/Custom.TabRadioButton"
             android:checked="true"
             android:drawableTop="@drawable/tab_sign_selector"
             android:text="主页" />
 
         <RadioButton
-            android:id="@+id/record_tab"
+            android:id="@+id/call_tab"
             style="@style/Custom.TabRadioButton"
             android:drawableTop="@drawable/tab_record_selector"
             android:text="电话" />
 
         <RadioButton
-            android:id="@+id/contact_tab"
+            android:id="@+id/massage_tab"
             style="@style/Custom.TabRadioButton"
             android:drawableTop="@drawable/tab_contact_selector"
             android:text="短信" />
 
         <RadioButton
-            android:id="@+id/settings_tab"
+            android:id="@+id/person_tab"
             style="@style/Custom.TabRadioButton"
             android:drawableTop="@drawable/tab_setting_selector"
             android:text="个人" />
