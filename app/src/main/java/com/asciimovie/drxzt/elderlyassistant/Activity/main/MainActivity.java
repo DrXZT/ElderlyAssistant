@@ -1,4 +1,4 @@
-package com.asciimovie.drxzt.elderlyassistant.activity;
+package com.asciimovie.drxzt.elderlyassistant.activity.main;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
