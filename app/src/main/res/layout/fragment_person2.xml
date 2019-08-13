@@ -8,10 +8,10 @@
     android:background="@color/fatewhite">
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="270dp"
+        android:layout_height="310dp"
         app:layout_constraintTop_toTopOf="@+id/Parent"
         app:layout_constraintLeft_toLeftOf="@+id/Parent"
-        android:background="@drawable/yuanjiao"
+        android:background="@drawable/circle"
         android:id="@+id/parent">
 
         <TextView
@@ -34,17 +34,34 @@
             android:layout_marginTop="10dp"
             android:layout_marginLeft="80dp"
             android:background="@drawable/head"/>
+
         <Button
             android:id="@+id/btn_head2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
             app:layout_constraintTop_toTopOf="@+id/parent"
             app:layout_constraintLeft_toRightOf="@+id/btn_head"
+            android:drawableRight="@drawable/edit"
             android:layout_marginLeft="50dp"
-            android:text="点击登录"
-            android:textSize="30sp"
-            android:background="@color/white"
+            android:text="详细资料"
+            android:padding="5dp"
+            android:textSize="25sp"
+            android:background="@drawable/vtn_code"
             app:layout_constraintBaseline_toBaselineOf="@+id/btn_head"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="夏天"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            app:layout_constraintTop_toBottomOf="@+id/btn_head"
+            app:layout_constraintLeft_toLeftOf="@+id/parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="80dp"
+            android:drawableRight="@drawable/woman"/>
+
+
         <view
             android:id="@+id/v_1"
             android:layout_width="330dp"
@@ -52,7 +69,8 @@
             app:layout_constraintTop_toBottomOf="@+id/btn_head"
             app:layout_constraintLeft_toLeftOf="@+id/parent"
             app:layout_constraintRight_toRightOf="@+id/parent"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="60dp"/>
+
         <view
             android:id="@+id/v_2"
             android:layout_width="2dp"
@@ -86,4 +104,65 @@
 
 
     </android.support.constraint.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/tv_mycon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的关注"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        app:layout_constraintLeft_toLeftOf="@+id/Parent"
+        app:layout_constraintTop_toBottomOf="@+id/parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"/>
+
+    <Button
+        android:id="@+id/btn_life"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="生 活"
+        android:textSize="20sp"
+        android:background="@drawable/btn_1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mycon"
+        app:layout_constraintLeft_toLeftOf="@+id/parent"
+        android:layout_marginLeft="50dp" />
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="国 际"
+        android:textSize="20sp"
+        android:background="@drawable/btn_2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mycon"
+        app:layout_constraintLeft_toRightOf="@+id/btn_life"
+        android:layout_marginLeft="60dp"/>
+    <Button
+        android:id="@+id/btn_edu"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="教 育"
+        android:textSize="20sp"
+        android:background="@drawable/btn_3"
+        app:layout_constraintTop_toBottomOf="@+id/btn_life"
+        app:layout_constraintLeft_toLeftOf="@+id/parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_4"
+        app:layout_constraintTop_toBottomOf="@+id/btn_life"
+        app:layout_constraintLeft_toRightOf="@+id/btn_edu"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_edu"
+        android:layout_marginLeft="60dp"
+        android:drawableRight="@drawable/plus"
+        android:paddingRight="55dp"/>
+
+
+
+
+
 </android.support.constraint.ConstraintLayout>
