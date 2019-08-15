@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.user.CommunityActivity">
+    tools:context=".Activity.user.CommunityActivity"
+    tools:ignore="MissingDefaultResource">
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -28,6 +29,7 @@
             app:layout_constraintRight_toRightOf="@+id/parent"
             app:layout_constraintTop_toTopOf="@+id/parent"
             android:layout_marginTop="34dp"/>
+
         <ImageView
             android:id="@+id/iv_locate"
             android:layout_width="35dp"

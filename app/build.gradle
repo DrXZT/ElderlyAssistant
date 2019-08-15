@@ -10,6 +10,19 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+    sourceSets {
+        main {
+            res.srcDirs =
+                    [
+                            'src/main/res/layout/Community',
+                            'src/main/res/layout/Fragemnt',
+                            'src/main/res/layout',
+                            'src/main/res'
+
+
+                    ]
+        }
+    }
     buildTypes {
         release {
             minifyEnabled false

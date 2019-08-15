@@ -4,12 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.user.VolunteerActivity">
+    tools:context=".Activity.user.Food_spinachActivity">
     <android.support.constraint.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
         android:id="@+id/parent"
-        android:background="#f5f5f5">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
         <Button
             android:id="@+id/btn_back"
             android:layout_width="45dp"
@@ -20,13 +19,11 @@
             android:layout_marginLeft="30dp"
             android:background="@drawable/back"/>
         <TextView
-            android:layout_width="250dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="“我们的节日·端午”主题新时代文明实践系列活动"
+            android:text="培根"
             android:textSize="30sp"
             android:textColor="#000000"
-            android:maxLines="1"
-            android:ellipsize="end"
             app:layout_constraintLeft_toLeftOf="@+id/parent"
             app:layout_constraintRight_toRightOf="@+id/parent"
             app:layout_constraintTop_toTopOf="@+id/parent"
@@ -39,16 +36,23 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:background="@drawable/star"/>
-
-
         <ImageView
-            android:layout_width="480dp"
-            android:layout_height="830dp"
-            android:src="@drawable/festivalsText"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:src="@drawable/Bacon"
+            app:layout_constraintLeft_toLeftOf="@+id/parent"
+            app:layout_constraintRight_toRightOf="@+id/parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_back"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="30dp"/>
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="1000dp"
             app:layout_constraintTop_toBottomOf="@+id/btn_back"
             app:layout_constraintLeft_toLeftOf="@+id/parent"
             app:layout_constraintRight_toRightOf="@+id/parent"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="250dp"
+            android:src="@drawable/bacontext"/>
 
 
     </android.support.constraint.ConstraintLayout>

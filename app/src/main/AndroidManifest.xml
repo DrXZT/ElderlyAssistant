@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.user.FestivalsActivity"></activity>
+        <activity android:name=".Activity.user.Food_baconActivity"></activity>
+        <activity android:name=".Activity.user.Food_pineappleActivity" />
+        <activity android:name=".Activity.user.Food_potatoActivity" />
+        <activity android:name=".Activity.user.Food_shrimpActivity" />
+        <activity android:name=".Activity.user.Food_spinachActivity" />
+        <activity android:name=".Activity.user.Fragment_food_1" />
+        <activity android:name=".Activity.user.FestivalsActivity" />
         <activity android:name=".Activity.user.ServiceActivity" />
         <activity android:name=".Activity.user.SaleActivity" />
         <activity android:name=".Activity.user.VolunteerActivity" />
