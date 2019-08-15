@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.user.CommunityActivity">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/parent">
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            app:layout_constraintTop_toTopOf="@+id/parent"
+            app:layout_constraintLeft_toLeftOf="@+id/parent"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="社区活动"
+            android:textSize="35sp"
+            android:textColor="#000000"
+            app:layout_constraintLeft_toLeftOf="@+id/parent"
+            app:layout_constraintRight_toRightOf="@+id/parent"
+            app:layout_constraintTop_toTopOf="@+id/parent"
+            android:layout_marginTop="34dp"/>
+        <ImageView
+            android:id="@+id/iv_locate"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/locate"
+            app:layout_constraintTop_toBottomOf="@+id/btn_back"
+            app:layout_constraintLeft_toLeftOf="@+id/parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="浙江杭州余杭区"
+            android:textColor="#18709e"
+            android:textSize="25sp"
+            app:layout_constraintLeft_toRightOf="@+id/iv_locate"
+            app:layout_constraintTop_toBottomOf="@+id/btn_back"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"/>
+
+        <Button
+            android:id="@+id/btn_volunteer"
+            android:layout_width="350dp"
+            android:layout_height="220dp"
+            android:background="@drawable/volunteer"
+            app:layout_constraintTop_toBottomOf="@id/btn_back"
+            app:layout_constraintLeft_toLeftOf="@+id/parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="70dp"/>
+        <Button
+            android:id="@+id/btn_sale"
+            android:layout_width="350dp"
+            android:layout_height="220dp"
+            android:background="@drawable/sale"
+            app:layout_constraintTop_toBottomOf="@id/btn_volunteer"
+            app:layout_constraintLeft_toLeftOf="@+id/parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"/>
+        <Button
+            android:id="@+id/btn_service"
+            android:layout_width="350dp"
+            android:layout_height="220dp"
+            android:background="@drawable/service"
+            app:layout_constraintTop_toBottomOf="@id/btn_sale"
+            app:layout_constraintLeft_toLeftOf="@+id/parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"/>
+        <Button
+            android:id="@+id/btn_festivals"
+            android:layout_width="350dp"
+            android:layout_height="220dp"
+            android:background="@drawable/festivals"
+            app:layout_constraintTop_toBottomOf="@id/btn_service"
+            app:layout_constraintLeft_toLeftOf="@+id/parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</ScrollView>

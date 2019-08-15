@@ -1,12 +1,232 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="1"
-        android:textSize="100dp"/>
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-</LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/par"
+        android:background="#f5f5f5">
+        <TextView
+            android:id="@+id/tv_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="主页"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            app:layout_constraintLeft_toLeftOf="@+id/par"
+            app:layout_constraintTop_toTopOf="@+id/par"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"/>
+        <ImageView
+            android:layout_width="355dp"
+            android:layout_height="110dp"
+            android:src="@drawable/frag_main"
+            app:layout_constraintLeft_toLeftOf="@+id/par"
+            app:layout_constraintRight_toRightOf="@+id/par"
+            app:layout_constraintTop_toBottomOf="@+id/tv_main"
+            android:layout_marginTop="20dp">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tv_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2019年8月14日"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            app:layout_constraintTop_toBottomOf="@+id/tv_main"
+            app:layout_constraintLeft_toLeftOf="@+id/par"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="60dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="星期二"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            app:layout_constraintTop_toBottomOf="@+id/tv_main"
+            app:layout_constraintRight_toRightOf="@+id/par"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="60dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16：40"
+            android:textSize="40sp"
+            android:textColor="#000000"
+            app:layout_constraintTop_toBottomOf="@+id/tv_year"
+            app:layout_constraintLeft_toLeftOf="@+id/par"
+            android:layout_marginLeft="60dp"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/darkday"
+            app:layout_constraintTop_toBottomOf="@+id/tv_year"
+            app:layout_constraintRight_toLeftOf="@+id/tv_day"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:id="@+id/tv_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="阴天"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            app:layout_constraintTop_toBottomOf="@+id/tv_year"
+            app:layout_constraintRight_toRightOf="@+id/par"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="60dp"/>
+
+        <TextView
+            android:id="@+id/tv_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="备忘录"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            app:layout_constraintLeft_toLeftOf="@+id/par"
+            app:layout_constraintTop_toBottomOf="@+id/tv_main"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="150dp"/>
+        <TextView
+            android:id="@+id/tv_health"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="健康"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            app:layout_constraintLeft_toLeftOf="@+id/par"
+            app:layout_constraintTop_toBottomOf="@+id/tv_note"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="200dp"/>
+        <Button
+            android:id="@+id/btn_food"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_health"
+            app:layout_constraintLeft_toLeftOf="@+id/par"
+            app:layout_constraintRight_toRightOf="@+id/par"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/heal1"
+            android:text="健康饮食"
+            android:textSize="30sp"
+            android:gravity="end"
+            android:paddingTop="40dp"
+            android:layout_marginRight="10dp"
+
+            />
+        <Button
+            android:id="@+id/btn_sport"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            app:layout_constraintTop_toBottomOf="@+id/btn_food"
+            app:layout_constraintLeft_toLeftOf="@+id/par"
+            app:layout_constraintRight_toRightOf="@+id/par"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/heal2"
+            android:text="健康运动"
+            android:textSize="30sp"
+            android:gravity="bottom"
+            android:paddingLeft="10dp"
+            android:paddingBottom="7dp"/>
+        <Button
+            android:id="@+id/btn_sleep"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            app:layout_constraintTop_toBottomOf="@+id/btn_sport"
+            app:layout_constraintLeft_toLeftOf="@+id/par"
+            app:layout_constraintRight_toRightOf="@+id/par"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/heal3"
+            android:text="睡眠助手"
+            android:textSize="30sp"
+            android:gravity="end"
+            android:paddingTop="40dp"
+            android:layout_marginRight="10dp"
+            />
+        <TextView
+            android:id="@+id/tv_fun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="娱乐"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            app:layout_constraintLeft_toLeftOf="@+id/par"
+            app:layout_constraintTop_toBottomOf="@+id/tv_health"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="370dp"/>
+        <Button
+            android:id="@+id/btn_community"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_fun"
+            app:layout_constraintLeft_toLeftOf="@+id/par"
+            app:layout_constraintRight_toRightOf="@+id/par"
+            android:background="@drawable/fun1"
+            android:layout_marginTop="15dp"
+            android:text="社区活动"
+            android:textSize="30sp"
+            android:gravity="bottom"
+            android:paddingLeft="10dp"
+            android:paddingBottom="7dp"
+            />
+        <Button
+            android:id="@+id/btn_news"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            app:layout_constraintTop_toBottomOf="@+id/btn_community"
+            app:layout_constraintLeft_toLeftOf="@+id/par"
+            app:layout_constraintRight_toRightOf="@+id/par"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/fun2"
+            android:text="时事新闻"
+            android:textSize="30sp"
+            android:gravity="end"
+            android:paddingTop="40dp"
+            android:layout_marginRight="10dp"/>
+        <Button
+            android:id="@+id/btn_radio"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            app:layout_constraintTop_toBottomOf="@+id/btn_news"
+            app:layout_constraintLeft_toLeftOf="@+id/par"
+            app:layout_constraintRight_toRightOf="@+id/par"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/fun3"
+            android:text="收音机"
+            android:textSize="30sp"
+            android:gravity="left"
+            android:paddingLeft="40dp"
+            android:paddingTop="20dp"
+            />
+        <Button
+            android:id="@+id/btn_story"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            app:layout_constraintTop_toBottomOf="@id/btn_radio"
+            app:layout_constraintLeft_toLeftOf="@+id/par"
+            app:layout_constraintRight_toRightOf="@+id/par"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/fun4"
+            android:text="听故事"
+            android:textSize="30sp" />
+
+
+
+ 
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+</ScrollView>

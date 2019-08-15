@@ -35,6 +35,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button button5 = findViewById(R.id.btn_head);
         Button button6 = findViewById(R.id.btn_head2);
 
+        Button button7 = findViewById(R.id.btn_food);
+        Button button8 = findViewById(R.id.btn_sport);
+        Button button9 = findViewById(R.id.btn_sleep);
+        Button button10 = findViewById(R.id.btn_community);
+        Button button11 = findViewById(R.id.btn_news);
+        Button button12 = findViewById(R.id.btn_radio);
+        Button button13 = findViewById(R.id.btn_story);
+
     }
 
     @Override
@@ -60,6 +68,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent2 = new Intent(MainActivity.this,LoginActivity.class);
                 startActivity(intent2);
                 break;
+            case R.id.btn_community:
+                Intent intent3 = new Intent(MainActivity.this,CommunityActivity.class);
+                startActivity(intent3);
+            case R.id.btn_food:
+                Intent intent4 = new Intent(MainActivity.this,FoodActivity.class);
+                startActivity(intent4);
+
             default:
                 break;
 
