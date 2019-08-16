@@ -15,7 +15,7 @@ android {
             res.srcDirs =
                     [
                             'src/main/res/layout/Community',
-                            'src/main/res/layout/Fragemnt',
+                            'src/main/res/layout/Fragement',
                             'src/main/res/layout',
                             'src/main/res'
 
