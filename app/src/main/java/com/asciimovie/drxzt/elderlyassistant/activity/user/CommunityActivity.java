@@ -1,4 +1,4 @@
-package com.asciimovie.drxzt.elderlyassistant.Activity.user;
+package com.asciimovie.drxzt.elderlyassistant.activity.user;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.asciimovie.drxzt.elderlyassistant.Activity.main.MainActivity;
 import com.asciimovie.drxzt.elderlyassistant.R;
 
 public class CommunityActivity extends AppCompatActivity implements View.OnClickListener {

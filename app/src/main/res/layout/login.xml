@@ -41,19 +41,21 @@
         android:layout_marginLeft="59dp"
         android:layout_marginTop="90dp"
         android:textColor="#000000"/>
+
     <EditText
+        android:id="@+id/phone"
         android:layout_width="200dp"
         android:layout_height="58dp"
-        android:hint="请输入手机号"
-        android:textSize="23sp"
-        android:maxLines="1"
-        app:layout_constraintLeft_toRightOf="@+id/tv_pn"
         android:layout_marginLeft="1dp"
-        android:includeFontPadding="false"
-        app:layout_constraintRight_toRightOf="@+id/parent"
-        android:textColor="#cdcdcd"
         android:background="@color/white"
-        app:layout_constraintBaseline_toBaselineOf="@+id/tv_pn"/>
+        android:hint="请输入手机号"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:textColor="#cdcdcd"
+        android:textSize="23sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_pn"
+        app:layout_constraintLeft_toRightOf="@+id/tv_pn"
+        app:layout_constraintRight_toRightOf="@+id/parent" />
     <view
         android:layout_width="300dp"
         android:layout_height="1dp"
@@ -82,7 +84,7 @@
         app:layout_constraintRight_toRightOf="@+id/parent"
         android:layout_marginTop="5dp"/>
     <EditText
-        android:id="@+id/et_2"
+        android:id="@+id/login_code"
         android:layout_width="200dp"
         android:layout_height="58dp"
         android:hint="请填写验证码"
@@ -102,7 +104,7 @@
         android:layout_height="30dp"
         android:text="获取验证码"
         android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/et_2"
+        app:layout_constraintTop_toBottomOf="@+id/login_code"
         app:layout_constraintRight_toRightOf="@+id/parent"
         android:layout_marginRight="55dp"
         android:layout_marginTop="5dp"
@@ -120,56 +122,6 @@
         android:text="登录"
         android:textSize="25sp"
         android:background="@drawable/btn_login"/>
-
-    <TextView
-        android:id="@+id/tv_m"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="管理员登录"
-        android:textSize="20sp"
-        android:textColor="#cdcdcd"
-        app:layout_constraintTop_toBottomOf="@+id/btn_login"
-        app:layout_constraintLeft_toLeftOf="@+id/parent"
-        app:layout_constraintRight_toRightOf="@+id/parent"
-        android:layout_marginTop="5dp"/>
-    <view
-        android:layout_width="100dp"
-        android:layout_height="1dp"
-        android:textColor="#cdcdcd"
-        app:layout_constraintTop_toBottomOf="@+id/tv_m"
-        app:layout_constraintLeft_toLeftOf="@+id/parent"
-        app:layout_constraintRight_toRightOf="@+id/parent" />
-
-    <TextView
-        android:id="@+id/tv_other"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="- 其他登录方式 -"
-        android:textSize="25sp"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="@+id/parent"
-        app:layout_constraintLeft_toLeftOf="@+id/parent"
-        app:layout_constraintRight_toRightOf="@+id/parent"
-        android:layout_marginBottom="120dp"
-        android:layout_marginTop="5dp"/>
-
-    <Button
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:src="@drawable/wechat"
-        app:layout_constraintTop_toBottomOf="@+id/tv_other"
-        app:layout_constraintLeft_toLeftOf="@+id/parent"
-        app:layout_constraintRight_toRightOf="@+id/parent"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/wechat"/>
-
-
-
-
-
-
-
-
 
 
 

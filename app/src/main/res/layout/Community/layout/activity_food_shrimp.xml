@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.user.Food_spinachActivity">
+    tools:context=".activity.user.FoodSpinachActivity">
     <android.support.constraint.ConstraintLayout
         android:id="@+id/parent"
         android:layout_width="match_parent"
@@ -39,7 +39,7 @@
         <ImageView
             android:layout_width="350dp"
             android:layout_height="200dp"
-            android:src="@drawable/Shrimp"
+            android:src="@drawable/shrimp"
             app:layout_constraintLeft_toLeftOf="@+id/parent"
             app:layout_constraintRight_toRightOf="@+id/parent"
             app:layout_constraintTop_toBottomOf="@+id/btn_back"

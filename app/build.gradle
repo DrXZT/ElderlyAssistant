@@ -16,10 +16,9 @@ android {
                     [
                             'src/main/res/layout/Community',
                             'src/main/res/layout/Fragement',
+                            'src/main/res/layout/main',
                             'src/main/res/layout',
                             'src/main/res'
-
-
                     ]
         }
     }

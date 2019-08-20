@@ -1,4 +1,4 @@
-package com.asciimovie.drxzt.elderlyassistant.Activity.user;
+package com.asciimovie.drxzt.elderlyassistant.activity.user;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -28,26 +28,26 @@ public class FoodActivity extends AppCompatActivity  {
         Button button8 = findViewById(R.id.btn_shrimp);
 
 
-        replaceFragment(new Fragment_food_1());
+        replaceFragment(new FragmentFood1());
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                replaceFragment(new Fragment_food_1());
+                replaceFragment(new FragmentFood1());
                 button1.setTextColor(000000);
             }
         });
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                replaceFragment(new Fragment_food_2());
+                replaceFragment(new FragmentFood2());
                 button2.setTextColor(000000);
             }
         });
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                replaceFragment(new Fragment_food_3());
+                replaceFragment(new FragmentFood3());
                 button3.setTextColor(000000);
             }
         });

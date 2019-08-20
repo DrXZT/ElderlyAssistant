@@ -1,16 +1,15 @@
-package com.asciimovie.drxzt.elderlyassistant.Activity.user;
+package com.asciimovie.drxzt.elderlyassistant.activity.user;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.asciimovie.drxzt.elderlyassistant.R;
 
-public class Food_shrimpActivity extends AppCompatActivity {
+public class FoodBaconActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_food_shrimp);
-
+        setContentView(R.layout.activity_food_bacon);
     }
 }

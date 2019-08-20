@@ -48,7 +48,7 @@
             android:textSize="30sp"
             android:background="@color/white"
             app:layout_constraintBaseline_toBaselineOf="@+id/btn_head"/>
-        <view
+        <View
             android:id="@+id/v_1"
             android:layout_width="330dp"
             android:layout_height="3dp"
@@ -56,7 +56,7 @@
             app:layout_constraintLeft_toLeftOf="@+id/parent"
             app:layout_constraintRight_toRightOf="@+id/parent"
             android:layout_marginTop="20dp"/>
-        <view
+        <View
             android:id="@+id/v_2"
             android:layout_width="2dp"
             android:layout_height="60dp"

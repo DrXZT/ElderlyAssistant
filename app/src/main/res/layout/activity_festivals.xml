@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.user.VolunteerActivity">
+    tools:context=".activity.user.VolunteerActivity">
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -44,7 +44,7 @@
         <ImageView
             android:layout_width="480dp"
             android:layout_height="830dp"
-            android:src="@drawable/festivalsText"
+            android:src="@drawable/festivals_text"
             app:layout_constraintTop_toBottomOf="@+id/btn_back"
             app:layout_constraintLeft_toLeftOf="@+id/parent"
             app:layout_constraintRight_toRightOf="@+id/parent"

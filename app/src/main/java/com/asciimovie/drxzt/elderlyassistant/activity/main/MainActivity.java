@@ -1,4 +1,4 @@
-package com.asciimovie.drxzt.elderlyassistant.Activity.main;
+package com.asciimovie.drxzt.elderlyassistant.activity.main;
 
 import android.content.Intent;
 import android.support.v4.app.Fragment;
@@ -9,7 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.asciimovie.drxzt.elderlyassistant.Activity.user.*;
+import com.asciimovie.drxzt.elderlyassistant.activity.user.*;
 import com.asciimovie.drxzt.elderlyassistant.R;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
         Button button1 = findViewById(R.id.main_tab);
         Button button2 = findViewById(R.id.call_tab);
@@ -34,7 +33,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Button button5 = findViewById(R.id.btn_head);
         Button button6 = findViewById(R.id.btn_head2);
-
         Button button7 = findViewById(R.id.btn_food);
         Button button8 = findViewById(R.id.btn_sport);
         Button button9 = findViewById(R.id.btn_sleep);
