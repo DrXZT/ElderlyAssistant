@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.user.FoodBaconActivity"></activity>
+        <activity android:name=".activity.user.TaijiquanActivity"></activity>
+        <activity android:name=".activity.user.SquaredanceActivity" />
+        <activity android:name=".activity.user.ExerciseActivity" />
+        <activity android:name=".activity.user.RunActivity" />
+        <activity android:name=".activity.user.WalkActivity" />
+        <activity android:name=".activity.user.SleepActivity" />
+        <activity android:name=".activity.user.FoodBaconActivity" />
         <activity android:name=".activity.user.FoodPineappleActivity" />
         <activity android:name=".activity.user.FoodPotatoActivity" />
         <activity android:name=".activity.user.FoodShrimpActivity" />

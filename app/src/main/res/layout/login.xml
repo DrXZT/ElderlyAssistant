@@ -14,8 +14,7 @@
         android:layout_marginLeft="37dp"
         android:background="@drawable/ic_clear_delet"
         app:layout_constraintLeft_toLeftOf="@+id/parent"
-        app:layout_constraintTop_toTopOf="@+id/parent"
-        />
+        app:layout_constraintTop_toTopOf="@+id/parent" />
 
     <TextView
         android:id="@+id/tv_title"

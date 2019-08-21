@@ -55,6 +55,9 @@ public class FragmentMain extends Fragment implements View.OnClickListener {
             case R.id.btn_food:
                 Intent intent4 = new Intent(getActivity(), FoodActivity.class);
                 startActivity(intent4);
+            case R.id.btn_sleep:
+                Intent intent5 = new Intent(getActivity(),SleepActivity.class);
+                startActivity(intent5);
         }
 
 
