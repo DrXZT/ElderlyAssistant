@@ -13,15 +13,23 @@ import com.asciimovie.drxzt.elderlyassistant.activity.user.*;
 import com.asciimovie.drxzt.elderlyassistant.R;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+    Button button1;
+    Button button2;
+    Button button3;
+    Button button4;
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button button1 = findViewById(R.id.main_tab);
-        Button button2 = findViewById(R.id.call_tab);
-        Button button3 = findViewById(R.id.message_tab);
-        Button button4 = findViewById(R.id.person_tab);
+        button1 = findViewById(R.id.main_tab);
+        button2 = findViewById(R.id.call_tab);
+        button3 = findViewById(R.id.message_tab);
+        button4 = findViewById(R.id.person_tab);
 
         button1.setOnClickListener(this);
         button2.setOnClickListener(this);
@@ -31,15 +39,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         replaceFragment(new FragmentMain());
 
 
-        Button button5 = findViewById(R.id.btn_head);
-        Button button6 = findViewById(R.id.btn_head2);
-        Button button7 = findViewById(R.id.btn_food);
-        Button button8 = findViewById(R.id.btn_sport);
-        Button button9 = findViewById(R.id.btn_sleep);
-        Button button10 = findViewById(R.id.btn_community);
-        Button button11 = findViewById(R.id.btn_news);
-        Button button12 = findViewById(R.id.btn_radio);
-        Button button13 = findViewById(R.id.btn_story);
+
+
+
+
+
+
 
     }
 
@@ -58,20 +63,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.person_tab:
                 replaceFragment(new FragmentPerson());
                 break;
-            case R.id.btn_head:
-                Intent intent = new Intent(MainActivity.this,LoginActivity.class);
-                startActivity(intent);
-                break;
-            case R.id.btn_head2:
-                Intent intent2 = new Intent(MainActivity.this,LoginActivity.class);
-                startActivity(intent2);
-                break;
-            case R.id.btn_community:
-                Intent intent3 = new Intent(MainActivity.this,CommunityActivity.class);
-                startActivity(intent3);
-            case R.id.btn_food:
-                Intent intent4 = new Intent(MainActivity.this,FoodActivity.class);
-                startActivity(intent4);
+
+
+
 
             default:
                 break;

@@ -113,6 +113,7 @@
             android:layout_marginTop="15dp"
             android:background="@drawable/heal1"
             android:text="健康饮食"
+            android:textColor="#000000"
             android:textSize="30sp"
             android:gravity="end"
             android:paddingTop="40dp"
@@ -129,6 +130,7 @@
             android:layout_marginTop="15dp"
             android:background="@drawable/heal2"
             android:text="健康运动"
+            android:textColor="#000000"
             android:textSize="30sp"
             android:gravity="bottom"
             android:paddingLeft="10dp"
@@ -143,6 +145,7 @@
             android:layout_marginTop="15dp"
             android:background="@drawable/heal3"
             android:text="睡眠助手"
+            android:textColor="#000000"
             android:textSize="30sp"
             android:gravity="end"
             android:paddingTop="40dp"
@@ -153,6 +156,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="娱乐"
+
             android:textSize="25sp"
             android:textColor="#000000"
             app:layout_constraintLeft_toLeftOf="@+id/par"
@@ -169,6 +173,7 @@
             android:background="@drawable/fun1"
             android:layout_marginTop="15dp"
             android:text="社区活动"
+            android:textColor="#000000"
             android:textSize="30sp"
             android:gravity="bottom"
             android:paddingLeft="10dp"
@@ -184,6 +189,7 @@
             android:layout_marginTop="15dp"
             android:background="@drawable/fun2"
             android:text="时事新闻"
+            android:textColor="#000000"
             android:textSize="30sp"
             android:gravity="end"
             android:paddingTop="40dp"
@@ -198,6 +204,7 @@
             android:layout_marginTop="15dp"
             android:background="@drawable/fun3"
             android:text="收音机"
+            android:textColor="#000000"
             android:textSize="30sp"
             android:gravity="left"
             android:paddingLeft="40dp"
@@ -213,6 +220,7 @@
             android:layout_marginTop="15dp"
             android:background="@drawable/fun4"
             android:text="听故事"
+            android:textColor="#000000"
             android:textSize="30sp" />
 
 
