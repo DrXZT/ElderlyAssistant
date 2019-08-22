@@ -85,9 +85,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     e.printStackTrace();
                     ToastUtil.toast(LoginActivity.this,"登录失败");
                 }
-                Intent intent = new Intent(LoginActivity.this,MainActivity.class);
-                startActivity(intent);
-                replaceFragment(new FragmentPerson2());
                 }).start();
         }
 
@@ -110,8 +107,14 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             UserDO userDO =JSONObject.parseObject(loginInformation.getResult(),UserDO.class);
             editor.putString("userId",userDO.getid().toString());
             editor.apply();
-            Intent intent = new Intent(this, MainActivity.class);
+            //登入后传递个人数据到碎片
+            FragmentPerson2 discoverFragment = new FragmentPerson2();
+            Bundle bundle = new Bundle();
+            bundle.putString("user", loginInformation.getResult());
+            discoverFragment.setArguments(bundle);
+            Intent intent = new Intent(LoginActivity.this,MainActivity.class);
             startActivity(intent);
+            replaceFragment(new FragmentPerson2());
         }else{
             new Handler(Looper.getMainLooper()).post(() -> Toast.makeText(this, loginInformation.getDescription(), Toast.LENGTH_LONG).show());
             throw new RuntimeException(loginInformation.getDescription());
