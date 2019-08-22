@@ -1,4 +1,4 @@
-package com.asciimovie.drxzt.elderlyassistant.activity.user;
+package com.asciimovie.drxzt.elderlyassistant.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,7 +11,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.asciimovie.drxzt.elderlyassistant.R;
-import com.asciimovie.drxzt.elderlyassistant.activity.main.MainActivity;
+import com.asciimovie.drxzt.elderlyassistant.activity.food.FoodActivity;
+import com.asciimovie.drxzt.elderlyassistant.activity.CommunityActivity;
+import com.asciimovie.drxzt.elderlyassistant.activity.SleepActivity;
 
 public class FragmentMain extends Fragment implements View.OnClickListener {
 
@@ -56,7 +58,7 @@ public class FragmentMain extends Fragment implements View.OnClickListener {
                 Intent intent4 = new Intent(getActivity(), FoodActivity.class);
                 startActivity(intent4);
             case R.id.btn_sleep:
-                Intent intent5 = new Intent(getActivity(),SleepActivity.class);
+                Intent intent5 = new Intent(getActivity(), SleepActivity.class);
                 startActivity(intent5);
         }
 

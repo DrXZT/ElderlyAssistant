@@ -1,4 +1,4 @@
-package com.asciimovie.drxzt.elderlyassistant.activity.user;
+package com.asciimovie.drxzt.elderlyassistant.fragment;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.asciimovie.drxzt.elderlyassistant.R;
+import com.asciimovie.drxzt.elderlyassistant.activity.user.LoginActivity;
 
 public class FragmentPerson extends Fragment implements View.OnClickListener  {
 
@@ -37,7 +38,7 @@ public class FragmentPerson extends Fragment implements View.OnClickListener  {
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btn_head:
-                Intent intent = new Intent(getActivity(),LoginActivity.class);
+                Intent intent = new Intent(getActivity(), LoginActivity.class);
                 startActivity(intent);
                 break;
             case R.id.btn_head2:

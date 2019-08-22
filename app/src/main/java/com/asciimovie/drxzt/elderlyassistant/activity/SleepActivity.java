@@ -1,4 +1,4 @@
-package com.asciimovie.drxzt.elderlyassistant.activity.user;
+package com.asciimovie.drxzt.elderlyassistant.activity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;

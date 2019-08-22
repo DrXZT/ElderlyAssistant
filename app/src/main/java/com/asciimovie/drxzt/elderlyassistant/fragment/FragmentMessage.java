@@ -1,4 +1,4 @@
-package com.asciimovie.drxzt.elderlyassistant.activity.user;
+package com.asciimovie.drxzt.elderlyassistant.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;

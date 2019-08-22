@@ -1,4 +1,4 @@
-package com.asciimovie.drxzt.elderlyassistant.activity.user;
+package com.asciimovie.drxzt.elderlyassistant.activity.food;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -9,6 +9,9 @@ import android.view.View;
 import android.widget.Button;
 
 import com.asciimovie.drxzt.elderlyassistant.R;
+import com.asciimovie.drxzt.elderlyassistant.fragment.FragmentFood1;
+import com.asciimovie.drxzt.elderlyassistant.fragment.FragmentFood2;
+import com.asciimovie.drxzt.elderlyassistant.fragment.FragmentFood3;
 
 public class FoodActivity extends AppCompatActivity implements View.OnClickListener  {
     Button button1;

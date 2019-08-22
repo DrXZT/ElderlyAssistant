@@ -1,4 +1,4 @@
-package com.asciimovie.drxzt.elderlyassistant.activity.user;
+package com.asciimovie.drxzt.elderlyassistant.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -10,12 +10,11 @@ import android.view.ViewGroup;
 
 import com.asciimovie.drxzt.elderlyassistant.R;
 
-public class FragmentFood3 extends Fragment {
+public class FragmentCall extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_food_3, container, false);
+        View view = inflater.inflate(R.layout.fragment_call, container, false);
         return view;
     }
-
 }
