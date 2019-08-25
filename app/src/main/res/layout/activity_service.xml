@@ -44,7 +44,7 @@
         <ImageView
             android:layout_width="420dp"
             android:layout_height="730dp"
-            android:src="@drawable/service"
+            android:src="@drawable/servicetext"
             app:layout_constraintTop_toBottomOf="@+id/btn_back"
             app:layout_constraintLeft_toLeftOf="@+id/parent"
             app:layout_constraintRight_toRightOf="@+id/parent"

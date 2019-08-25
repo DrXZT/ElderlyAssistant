@@ -42,10 +42,10 @@
             android:background="@drawable/star"/>
 
         <ImageView
-            android:id="@+id/heart2"
+            android:id="@+id/iv_volunteer"
             android:layout_width="350dp"
             android:layout_height="250dp"
-            android:src="@drawable/heart2"
+            android:src="@drawable/volunteer"
             app:layout_constraintTop_toTopOf="@+id/parent"
             app:layout_constraintLeft_toLeftOf="@+id/parent"
             app:layout_constraintRight_toRightOf="@+id/parent"
@@ -58,7 +58,7 @@
             android:text="活动内容"
             android:textSize="30sp"
             android:textColor="#000000"
-            app:layout_constraintTop_toBottomOf="@+id/heart2"
+            app:layout_constraintTop_toBottomOf="@+id/iv_volunteer"
             app:layout_constraintLeft_toLeftOf="@+id/parent"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="5dp"/>

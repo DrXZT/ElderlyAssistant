@@ -1,5 +1,6 @@
 package com.asciimovie.drxzt.elderlyassistant.activity.food;
 
+import android.graphics.Color;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -17,11 +18,6 @@ public class FoodActivity extends AppCompatActivity implements View.OnClickListe
     Button button1;
     Button button2;
     Button button3;
-    Button button4;
-    Button button5;
-    Button button6;
-    Button button7;
-    Button button8;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,11 +30,12 @@ public class FoodActivity extends AppCompatActivity implements View.OnClickListe
         button2 = findViewById(R.id.rb_2);
         button3 = findViewById(R.id.rb_3);
 
-        button4 = findViewById(R.id.btn_spinach);
-        button5 = findViewById(R.id.btn_potato);
-        button6 = findViewById(R.id.btn_pineapple);
-        button7 = findViewById(R.id.btn_bacon);
-        button8 = findViewById(R.id.btn_shrimp);
+        button1.setOnClickListener(this);
+        button2.setOnClickListener(this);
+        button3.setOnClickListener(this);
+
+
+
 
 
         replaceFragment(new FragmentFood1());
@@ -89,20 +86,20 @@ public class FoodActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()){
             case R.id.rb_1:
                 replaceFragment(new FragmentFood1());
-                button1.setTextColor(000000);
+                button1.setTextColor(Color.BLACK);
             case R.id.rb_2:
                 replaceFragment(new FragmentFood2());
-                button1.setTextColor(000000);
+                button2.setTextColor(Color.BLACK);
             case R.id.rb_3:
                 replaceFragment(new FragmentFood3());
-                button1.setTextColor(000000);
+                button3.setTextColor(Color.BLACK);
 
         }
     }
     private void replaceFragment(Fragment fragment) {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
-        transaction.replace(R.id.layout, fragment);
+        transaction.replace(R.id.fl_layout, fragment);
         transaction.addToBackStack(null);
         transaction.commit();
     }

@@ -8,8 +8,11 @@ import android.view.View;
 import android.widget.Button;
 
 import com.asciimovie.drxzt.elderlyassistant.R;
+import com.asciimovie.drxzt.elderlyassistant.activity.main.MainActivity;
+import com.asciimovie.drxzt.elderlyassistant.fragment.FragmentMain;
 
 public class SportsActivity extends AppCompatActivity implements View.OnClickListener {
+    Button button;
     Button button1;
     Button button2;
     Button button3;
@@ -22,6 +25,8 @@ public class SportsActivity extends AppCompatActivity implements View.OnClickLis
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sports);
+
+        button = findViewById(R.id.btn_back);
 
         button1 = findViewById(R.id.btn_walk);
         button2 = findViewById(R.id.btn_run);
@@ -40,6 +45,9 @@ public class SportsActivity extends AppCompatActivity implements View.OnClickLis
     @Override
     public void onClick(View v) {
         switch (v.getId()){
+            case R.id.btn_back:
+                Intent intent = new Intent(SportsActivity.this, MainActivity.class);
+                startActivity(intent);
             case R.id.btn_walk:
                 Intent intent1 = new Intent(SportsActivity.this,WalkActivity.class);
                 startActivity(intent1);

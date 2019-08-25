@@ -40,13 +40,13 @@
             style="@style/Custom.TabRadioButton"
             android:checked="true"
             android:text="主食谱"
-            android:textColor="#4e4e4e"
+            android:textColor="@drawable/btn_food_1"
             android:textSize="20sp"/>
 
         <RadioButton
             android:id="@+id/rb_2"
             style="@style/Custom.TabRadioButton"
-            android:textColor="#4e4e4e"
+            android:textColor="@drawable/btn_food_1"
             android:text="健康食物搭配"
             android:textSize="20sp"/>
 
@@ -54,12 +54,12 @@
             android:id="@+id/rb_3"
             style="@style/Custom.TabRadioButton"
             android:text="食物百科"
-            android:textColor="#4e4e4e"
+            android:textColor="@drawable/btn_food_1"
             android:textSize="20sp"/>
 
     </RadioGroup>
     <FrameLayout
-        android:id="@+id/layout"
+        android:id="@+id/fl_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"

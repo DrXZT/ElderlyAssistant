@@ -54,39 +54,39 @@
 
         <Button
             android:id="@+id/btn_volunteer"
-            android:layout_width="350dp"
+            android:layout_width="330dp"
             android:layout_height="220dp"
-            android:background="@drawable/volunteer"
+            android:background="@drawable/communityvolunteer"
             app:layout_constraintTop_toBottomOf="@id/btn_back"
             app:layout_constraintLeft_toLeftOf="@+id/parent"
-            android:layout_marginLeft="30dp"
+            app:layout_constraintRight_toRightOf="@+id/parent"
             android:layout_marginTop="70dp"/>
         <Button
             android:id="@+id/btn_sale"
-            android:layout_width="350dp"
+            android:layout_width="330dp"
             android:layout_height="220dp"
-            android:background="@drawable/sale"
+            android:background="@drawable/communitysale"
             app:layout_constraintTop_toBottomOf="@id/btn_volunteer"
             app:layout_constraintLeft_toLeftOf="@+id/parent"
-            android:layout_marginLeft="30dp"
+            app:layout_constraintRight_toRightOf="@+id/parent"
             android:layout_marginTop="20dp"/>
         <Button
             android:id="@+id/btn_service"
-            android:layout_width="350dp"
+            android:layout_width="340dp"
             android:layout_height="220dp"
             android:background="@drawable/service"
             app:layout_constraintTop_toBottomOf="@id/btn_sale"
             app:layout_constraintLeft_toLeftOf="@+id/parent"
-            android:layout_marginLeft="30dp"
+            app:layout_constraintRight_toRightOf="@+id/parent"
             android:layout_marginTop="20dp"/>
         <Button
             android:id="@+id/btn_festivals"
-            android:layout_width="350dp"
+            android:layout_width="340dp"
             android:layout_height="220dp"
             android:background="@drawable/festivals"
             app:layout_constraintTop_toBottomOf="@id/btn_service"
             app:layout_constraintLeft_toLeftOf="@+id/parent"
-            android:layout_marginLeft="30dp"
+            app:layout_constraintRight_toRightOf="@+id/parent"
             android:layout_marginTop="20dp"/>
 
     </android.support.constraint.ConstraintLayout>

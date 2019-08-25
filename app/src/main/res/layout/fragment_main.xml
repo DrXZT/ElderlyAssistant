@@ -156,13 +156,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="娱乐"
-
             android:textSize="25sp"
             android:textColor="#000000"
             app:layout_constraintLeft_toLeftOf="@+id/par"
-            app:layout_constraintTop_toBottomOf="@+id/tv_health"
+            app:layout_constraintTop_toBottomOf="@+id/btn_sleep"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="370dp"/>
+            android:layout_marginTop="10dp"/>
         <Button
             android:id="@+id/btn_community"
             android:layout_width="350dp"
