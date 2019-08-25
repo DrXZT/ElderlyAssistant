@@ -14,7 +14,7 @@
         <activity android:name=".activity.ExerciseActivity" />
         <activity android:name=".activity.RunActivity" />
         <activity android:name=".activity.WalkActivity" />
-        <activity android:name=".activity.SleepActivity" />
+        <activity android:name=".activity.SportsActivity" />
         <activity android:name=".activity.food.FoodBaconActivity" />
         <activity android:name=".activity.food.FoodPineappleActivity" />
         <activity android:name=".activity.food.FoodPotatoActivity" />

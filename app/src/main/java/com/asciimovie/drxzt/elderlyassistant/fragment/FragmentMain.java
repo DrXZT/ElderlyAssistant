@@ -13,7 +13,7 @@ import android.widget.Button;
 import com.asciimovie.drxzt.elderlyassistant.R;
 import com.asciimovie.drxzt.elderlyassistant.activity.food.FoodActivity;
 import com.asciimovie.drxzt.elderlyassistant.activity.CommunityActivity;
-import com.asciimovie.drxzt.elderlyassistant.activity.SleepActivity;
+import com.asciimovie.drxzt.elderlyassistant.activity.SportsActivity;
 
 public class FragmentMain extends Fragment implements View.OnClickListener {
 
@@ -57,9 +57,10 @@ public class FragmentMain extends Fragment implements View.OnClickListener {
             case R.id.btn_food:
                 Intent intent4 = new Intent(getActivity(), FoodActivity.class);
                 startActivity(intent4);
-            case R.id.btn_sleep:
-                Intent intent5 = new Intent(getActivity(), SleepActivity.class);
+            case R.id.btn_sport:
+                Intent intent5 = new Intent(getActivity(), SportsActivity.class);
                 startActivity(intent5);
+
         }
 
 

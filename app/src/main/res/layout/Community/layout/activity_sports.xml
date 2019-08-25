@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.SleepActivity"
+    tools:context=".activity.SportsActivity"
     android:id="@+id/parent"
     android:background="#ffffff">
     <Button
@@ -26,47 +26,48 @@
         app:layout_constraintRight_toRightOf="@+id/parent"
         app:layout_constraintTop_toTopOf="@+id/parent"
         android:layout_marginTop="34dp"/>
-    <ImageView
-        android:id="@+id/iv_walk"
+
+    <Button
+        android:id="@+id/btn_walk"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:src="@drawable/walk"
+        android:background="@drawable/walk"
         app:layout_constraintTop_toBottomOf="@id/btn_back"
         app:layout_constraintLeft_toLeftOf="@+id/parent"
         android:layout_marginLeft="35dp"
         android:layout_marginTop="40dp"/>
-    <ImageView
-        android:id="@+id/iv_exercise"
+    <Button
+        android:id="@+id/btn_exercise"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:src="@drawable/exercise"
-        app:layout_constraintTop_toBottomOf="@id/iv_walk"
+        android:background="@drawable/exercise"
+        app:layout_constraintTop_toBottomOf="@id/btn_walk"
         app:layout_constraintLeft_toLeftOf="@+id/parent"
         android:layout_marginLeft="35dp"
         android:layout_marginTop="40dp"/>
-    <ImageView
-        android:id="@+id/iv_taijiquan"
+    <Button
+        android:id="@+id/btn_taijiquan"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:src="@drawable/taijiquan"
-        app:layout_constraintTop_toBottomOf="@id/iv_exercise"
+        android:background="@drawable/taijiquan"
+        app:layout_constraintTop_toBottomOf="@id/btn_exercise"
         app:layout_constraintLeft_toLeftOf="@+id/parent"
         android:layout_marginLeft="35dp"
         android:layout_marginTop="40dp"/>
-    <ImageView
-        android:id="@+id/iv_run"
+    <Button
+        android:id="@+id/btn_run"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:src="@drawable/run"
-        app:layout_constraintTop_toTopOf="@id/iv_walk"
+        android:background="@drawable/run"
+        app:layout_constraintTop_toTopOf="@id/btn_walk"
         app:layout_constraintRight_toRightOf="@+id/parent"
         android:layout_marginRight="35dp" />
-    <ImageView
-        android:id="@+id/iv_squaredance"
+    <Button
+        android:id="@+id/btn_squaredance"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:src="@drawable/squaredance"
-        app:layout_constraintTop_toTopOf="@id/iv_exercise"
+        android:background="@drawable/squaredance"
+        app:layout_constraintTop_toTopOf="@id/btn_exercise"
         app:layout_constraintRight_toRightOf="@+id/parent"
         android:layout_marginRight="35dp" />
 

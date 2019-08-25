@@ -41,14 +41,48 @@
             app:layout_constraintRight_toRightOf="@+id/parent"
             android:layout_marginTop="5dp"/>
         <TextView
+            android:id="@+id/tv_relative"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="相关链接"
             android:textColor="#000000"
-            android:textSize="25sp"
+            android:textSize="28sp"
             app:layout_constraintTop_toBottomOf="@+id/iv"
             app:layout_constraintLeft_toLeftOf="@+id/parent"
-            android:layout_marginLeft="30dp"/>
+            android:layout_marginLeft="40dp"/>
+
+        <ImageView
+            android:id="@+id/iv_link"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_relative"
+            app:layout_constraintLeft_toLeftOf="@+id/parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/link"/>
+        <View
+            android:layout_width="350dp"
+            android:layout_height="1dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_relative"
+            app:layout_constraintLeft_toLeftOf="@id/iv_link"
+            android:layout_marginTop="35dp"
+            android:background="#18709e"/>
+        <Button
+            android:id="@+id/btn_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            app:layout_constraintLeft_toRightOf="@+id/iv_link"
+            app:layout_constraintTop_toBottomOf="@+id/tv_relative"
+            android:text="中老年健身操   有氧健身运动"
+            android:textSize="25sp"
+            android:textColor="#18709e"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#ffffff"
+            app:layout_constraintLeft_toLeftOf="@+id/parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_link"/>
 
     </android.support.constraint.ConstraintLayout>
 
