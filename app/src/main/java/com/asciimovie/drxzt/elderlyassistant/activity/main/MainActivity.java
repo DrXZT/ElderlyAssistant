@@ -9,10 +9,10 @@ import android.view.View;
 import android.widget.Button;
 
 import com.asciimovie.drxzt.elderlyassistant.R;
-import com.asciimovie.drxzt.elderlyassistant.fragment.FragmentCall;
-import com.asciimovie.drxzt.elderlyassistant.fragment.FragmentMain;
-import com.asciimovie.drxzt.elderlyassistant.fragment.FragmentMessage;
-import com.asciimovie.drxzt.elderlyassistant.fragment.FragmentPerson;
+import com.asciimovie.drxzt.elderlyassistant.fragment.CallFragment;
+import com.asciimovie.drxzt.elderlyassistant.fragment.MainFragment;
+import com.asciimovie.drxzt.elderlyassistant.fragment.MessageFragment;
+import com.asciimovie.drxzt.elderlyassistant.fragment.PersonFragment;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button3.setOnClickListener(this);
         button4.setOnClickListener(this);
 
-        replaceFragment(new FragmentMain());
+        replaceFragment(new MainFragment());
 
 
 
@@ -55,16 +55,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.main_tab:
-                replaceFragment(new FragmentMain());
+                replaceFragment(new MainFragment());
                 break;
             case R.id.call_tab:
-                replaceFragment(new FragmentCall());
+                replaceFragment(new CallFragment());
                 break;
             case R.id.message_tab:
-                replaceFragment(new FragmentMessage());
+                replaceFragment(new MessageFragment());
                 break;
             case R.id.person_tab:
-                replaceFragment(new FragmentPerson());
+                replaceFragment(new PersonFragment());
                 break;
 
 

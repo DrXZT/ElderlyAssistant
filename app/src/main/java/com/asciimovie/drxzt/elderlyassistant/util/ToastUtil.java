@@ -1,19 +1,11 @@
 package com.asciimovie.drxzt.elderlyassistant.util;
 
 import android.content.Context;
-import android.content.Intent;
-import android.content.SharedPreferences;
-import android.os.Handler;
-import android.os.Looper;
 import android.view.Gravity;
 import android.widget.Toast;
 
 import com.alibaba.fastjson.JSONObject;
-import com.asciimovie.drxzt.elderlyassistant.activity.main.MainActivity;
-import com.asciimovie.drxzt.elderlyassistant.activity.user.LoginActivity;
 import com.asciimovie.drxzt.elderlyassistant.entity.ResponseDo;
-import com.asciimovie.drxzt.elderlyassistant.entity.UserDO;
-import com.asciimovie.drxzt.elderlyassistant.fragment.FragmentPerson2;
 
 import org.jetbrains.annotations.NotNull;
 

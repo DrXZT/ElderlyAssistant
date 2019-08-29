@@ -13,7 +13,7 @@ import android.widget.Button;
 import com.asciimovie.drxzt.elderlyassistant.R;
 import com.asciimovie.drxzt.elderlyassistant.activity.user.LoginActivity;
 
-public class FragmentPerson extends Fragment implements View.OnClickListener  {
+public class PersonFragment extends Fragment implements View.OnClickListener  {
 
     Button button5;
     Button button6;

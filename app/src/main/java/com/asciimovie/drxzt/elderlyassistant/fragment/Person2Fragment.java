@@ -14,7 +14,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.asciimovie.drxzt.elderlyassistant.R;
 import com.asciimovie.drxzt.elderlyassistant.entity.UserDO;
 
-public class FragmentPerson2 extends Fragment {
+public class Person2Fragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

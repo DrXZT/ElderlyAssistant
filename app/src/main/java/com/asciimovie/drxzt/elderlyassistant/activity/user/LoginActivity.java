@@ -11,11 +11,9 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.alibaba.fastjson.JSONObject;
@@ -23,7 +21,7 @@ import com.asciimovie.drxzt.elderlyassistant.activity.main.MainActivity;
 import com.asciimovie.drxzt.elderlyassistant.R;
 import com.asciimovie.drxzt.elderlyassistant.entity.ResponseDo;
 import com.asciimovie.drxzt.elderlyassistant.entity.UserDO;
-import com.asciimovie.drxzt.elderlyassistant.fragment.FragmentPerson2;
+import com.asciimovie.drxzt.elderlyassistant.fragment.Person2Fragment;
 import com.asciimovie.drxzt.elderlyassistant.util.MyOkHttpPost;
 import com.asciimovie.drxzt.elderlyassistant.util.ToastUtil;
 
@@ -108,13 +106,13 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             editor.putString("userId",userDO.getid().toString());
             editor.apply();
             //登入后传递个人数据到碎片
-            FragmentPerson2 discoverFragment = new FragmentPerson2();
+            Person2Fragment discoverFragment = new Person2Fragment();
             Bundle bundle = new Bundle();
             bundle.putString("user", loginInformation.getResult());
             discoverFragment.setArguments(bundle);
             Intent intent = new Intent(LoginActivity.this,MainActivity.class);
             startActivity(intent);
-            replaceFragment(new FragmentPerson2());
+            replaceFragment(new Person2Fragment());
         }else{
             new Handler(Looper.getMainLooper()).post(() -> Toast.makeText(this, loginInformation.getDescription(), Toast.LENGTH_LONG).show());
             throw new RuntimeException(loginInformation.getDescription());

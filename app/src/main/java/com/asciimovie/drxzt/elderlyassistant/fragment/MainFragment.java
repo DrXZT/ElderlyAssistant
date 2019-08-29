@@ -13,9 +13,9 @@ import android.widget.Button;
 import com.asciimovie.drxzt.elderlyassistant.R;
 import com.asciimovie.drxzt.elderlyassistant.activity.food.FoodActivity;
 import com.asciimovie.drxzt.elderlyassistant.activity.CommunityActivity;
-import com.asciimovie.drxzt.elderlyassistant.activity.SportsActivity;
+import com.asciimovie.drxzt.elderlyassistant.activity.user.SportsActivity;
 
-public class FragmentMain extends Fragment implements View.OnClickListener {
+public class MainFragment extends Fragment implements View.OnClickListener {
 
 
     Button button7;

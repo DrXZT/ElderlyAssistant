@@ -10,11 +10,11 @@ import android.view.ViewGroup;
 
 import com.asciimovie.drxzt.elderlyassistant.R;
 
-public class FragmentCall extends Fragment {
+public class MessageFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_call, container, false);
+        View view = inflater.inflate(R.layout.fragment_message, container, false);
         return view;
     }
 }

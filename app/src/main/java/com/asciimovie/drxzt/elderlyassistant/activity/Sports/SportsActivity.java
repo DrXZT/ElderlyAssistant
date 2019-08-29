@@ -1,6 +1,5 @@
-package com.asciimovie.drxzt.elderlyassistant.activity;
+package com.asciimovie.drxzt.elderlyassistant.activity.Sports;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,7 +8,6 @@ import android.widget.Button;
 
 import com.asciimovie.drxzt.elderlyassistant.R;
 import com.asciimovie.drxzt.elderlyassistant.activity.main.MainActivity;
-import com.asciimovie.drxzt.elderlyassistant.fragment.FragmentMain;
 
 public class SportsActivity extends AppCompatActivity implements View.OnClickListener {
     Button button;
