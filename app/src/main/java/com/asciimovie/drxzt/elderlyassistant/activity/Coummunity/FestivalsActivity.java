@@ -15,7 +15,7 @@ public class FestivalsActivity extends AppCompatActivity implements View.OnClick
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_festivals);
+        setContentView(R.layout.community_festivals);
         button1 = findViewById(R.id.btn_back);
         button1.setOnClickListener(this);
     }

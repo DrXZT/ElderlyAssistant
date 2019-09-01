@@ -14,7 +14,7 @@ public class FoodBaconActivity extends AppCompatActivity implements View.OnClick
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_food_bacon);
+        setContentView(R.layout.food_bacon);
         button1 = findViewById(R.id.btn_back);
         button1.setOnClickListener(this);
 

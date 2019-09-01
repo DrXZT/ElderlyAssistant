@@ -14,7 +14,7 @@ public class WalkActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_walk);
+        setContentView(R.layout.sport_walk);
         button1 = findViewById(R.id.btn_back);
         button1.setOnClickListener(this);
     }

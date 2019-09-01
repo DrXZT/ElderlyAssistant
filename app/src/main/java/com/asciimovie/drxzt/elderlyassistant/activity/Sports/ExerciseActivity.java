@@ -15,7 +15,7 @@ public class ExerciseActivity extends AppCompatActivity implements View.OnClickL
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_exercise);
+        setContentView(R.layout.sport_exercise);
         button1 = findViewById(R.id.btn_back);
         button1.setOnClickListener(this);
     }

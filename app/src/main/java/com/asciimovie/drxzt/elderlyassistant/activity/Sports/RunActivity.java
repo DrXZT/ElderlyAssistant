@@ -16,7 +16,7 @@ public class RunActivity extends AppCompatActivity implements View.OnClickListen
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_run);
+        setContentView(R.layout.sport_run);
         button1 = findViewById(R.id.btn_back);
         button1.setOnClickListener(this);
     }
