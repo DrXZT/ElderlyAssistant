@@ -28,12 +28,24 @@ public class FragmentFood3 extends Fragment implements View.OnClickListener {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_food_3, container, false);
+
         button4 = view.findViewById(R.id.btn_spinach);
         button5 = view.findViewById(R.id.btn_potato);
         button6 = view.findViewById(R.id.btn_pineapple);
         button7 = view.findViewById(R.id.btn_bacon);
         button8 = view.findViewById(R.id.btn_shrimp);
+
+        button4.setOnClickListener(this);
+        button5.setOnClickListener(this);
+        button6.setOnClickListener(this);
+        button7.setOnClickListener(this);
+        button8.setOnClickListener(this);
         return view;
+    }
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
     }
 
     @Override
@@ -42,18 +54,25 @@ public class FragmentFood3 extends Fragment implements View.OnClickListener {
             case R.id.btn_spinach:
                 Intent intent1 = new Intent(getActivity(), FoodSpinachActivity.class);
                 startActivity(intent1);
+                break;
             case R.id.btn_potato:
                 Intent intent2 = new Intent(getActivity(), FoodPotatoActivity.class);
                 startActivity(intent2);
+                break;
             case R.id.btn_pineapple:
                 Intent intent3 = new Intent(getActivity(), FoodPineappleActivity.class);
                 startActivity(intent3);
+                break;
             case R.id.btn_bacon:
                 Intent intent4 = new Intent(getActivity(), FoodBaconActivity.class);
                 startActivity(intent4);
+                break;
             case R.id.btn_shrimp:
                 Intent intent5 = new Intent(getActivity(), FoodShrimpActivity.class);
                 startActivity(intent5);
+                break;
+            default:
+                break;
         }
     }
 }

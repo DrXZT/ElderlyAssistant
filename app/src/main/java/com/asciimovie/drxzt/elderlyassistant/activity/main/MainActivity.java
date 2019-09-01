@@ -1,5 +1,7 @@
 package com.asciimovie.drxzt.elderlyassistant.activity.main;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -13,6 +15,8 @@ import com.asciimovie.drxzt.elderlyassistant.fragment.CallFragment;
 import com.asciimovie.drxzt.elderlyassistant.fragment.MainFragment;
 import com.asciimovie.drxzt.elderlyassistant.fragment.MessageFragment;
 import com.asciimovie.drxzt.elderlyassistant.fragment.PersonFragment;
+
+
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -28,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         button1 = findViewById(R.id.main_tab);
         button2 = findViewById(R.id.call_tab);
@@ -58,10 +63,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 replaceFragment(new MainFragment());
                 break;
             case R.id.call_tab:
-                replaceFragment(new CallFragment());
+//                replaceFragment(new CallFragment());
+                Intent dialIntent =  new Intent(Intent.ACTION_CALL_BUTTON);//跳转到拨号界面
+                startActivity(dialIntent);
                 break;
             case R.id.message_tab:
-                replaceFragment(new MessageFragment());
+//                replaceFragment(new MessageFragment());
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_SENDTO);
+                intent.setData(Uri.parse("smsto:10086"));
+                intent.putExtra("sms_body","The SMS text");
+                startActivity(intent);
                 break;
             case R.id.person_tab:
                 replaceFragment(new PersonFragment());

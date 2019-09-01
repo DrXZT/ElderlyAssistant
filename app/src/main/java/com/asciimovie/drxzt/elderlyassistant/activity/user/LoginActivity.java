@@ -59,6 +59,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View v)  {
         switch (v.getId()){
+
             case R.id.btn_login:
                 new Thread(() -> {
                 String userPhone =mLogin_phone.getText().toString().trim();
@@ -84,6 +85,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     ToastUtil.toast(LoginActivity.this,"登录失败");
                 }
                 }).start();
+                Intent intent1 = new Intent(LoginActivity.this,MainActivity.class);
+                startActivity(intent1);
         }
 
     }

@@ -38,7 +38,7 @@ public class FoodActivity extends AppCompatActivity implements View.OnClickListe
 
 
 
-        replaceFragment(new FragmentFood1());
+        replaceFragment(new FragmentFood3());
 
 
 
@@ -87,12 +87,15 @@ public class FoodActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.rb_1:
                 replaceFragment(new FragmentFood1());
                 button1.setTextColor(Color.BLACK);
+                break;
             case R.id.rb_2:
                 replaceFragment(new FragmentFood2());
                 button2.setTextColor(Color.BLACK);
+                break;
             case R.id.rb_3:
                 replaceFragment(new FragmentFood3());
                 button3.setTextColor(Color.BLACK);
+                break;
 
         }
     }
