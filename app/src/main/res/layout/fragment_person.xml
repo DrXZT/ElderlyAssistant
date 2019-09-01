@@ -46,7 +46,7 @@
              android:layout_marginLeft="50dp"
             android:text="点击登录"
             android:textSize="30sp"
-            android:background="@color/white"
+            android:background="#ffffff"
             app:layout_constraintBaseline_toBaselineOf="@+id/btn_head"/>
         <View
             android:id="@+id/v_1"

@@ -32,12 +32,12 @@ public class SportsActivity extends AppCompatActivity implements View.OnClickLis
         button4 = findViewById(R.id.btn_squaredance);
         button5 = findViewById(R.id.btn_taijiquan);
 
+
         button1.setOnClickListener(this);
         button2.setOnClickListener(this);
         button3.setOnClickListener(this);
         button4.setOnClickListener(this);
         button5.setOnClickListener(this);
-
     }
 
     @Override
@@ -46,21 +46,29 @@ public class SportsActivity extends AppCompatActivity implements View.OnClickLis
             case R.id.btn_back:
                 Intent intent = new Intent(SportsActivity.this, MainActivity.class);
                 startActivity(intent);
+                break;
             case R.id.btn_walk:
                 Intent intent1 = new Intent(SportsActivity.this,WalkActivity.class);
                 startActivity(intent1);
+                break;
             case R.id.btn_run:
                 Intent intent2 = new Intent(SportsActivity.this,RunActivity.class);
                 startActivity(intent2);
+                break;
             case R.id.btn_exercise:
                 Intent intent3 = new Intent(SportsActivity.this,ExerciseActivity.class);
                 startActivity(intent3);
+                break;
             case R.id.btn_squaredance:
                 Intent intent4 = new Intent(SportsActivity.this,SquaredanceActivity.class);
                 startActivity(intent4);
+                break;
             case R.id.btn_taijiquan:
                 Intent intent5 = new Intent(SportsActivity.this,TaijiquanActivity.class);
                 startActivity(intent5);
+                break;
+            default:
+                break;
 
 
         }
