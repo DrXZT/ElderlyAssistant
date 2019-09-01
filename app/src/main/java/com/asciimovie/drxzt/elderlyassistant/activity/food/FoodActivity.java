@@ -24,7 +24,7 @@ public class FoodActivity extends AppCompatActivity implements View.OnClickListe
 
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_food);
+        setContentView(R.layout.food_food);
 
         button1 = findViewById(R.id.rb_1);
         button2 = findViewById(R.id.rb_2);

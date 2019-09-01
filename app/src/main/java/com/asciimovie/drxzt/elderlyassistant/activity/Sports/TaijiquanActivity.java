@@ -15,7 +15,7 @@ public class TaijiquanActivity extends AppCompatActivity implements View.OnClick
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_taijiquan);
+        setContentView(R.layout.sport_taijiquan);
         button1 = findViewById(R.id.btn_back);
         button1.setOnClickListener(this);
     }

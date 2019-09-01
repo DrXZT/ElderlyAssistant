@@ -14,7 +14,7 @@ public class ServiceActivity extends AppCompatActivity implements View.OnClickLi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_service);
+        setContentView(R.layout.community_service);
         button1 = findViewById(R.id.btn_back);
         button1.setOnClickListener(this);
     }

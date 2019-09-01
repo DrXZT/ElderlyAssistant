@@ -14,7 +14,7 @@ public class FoodPotatoActivity extends AppCompatActivity implements View.OnClic
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_food_potato);
+        setContentView(R.layout.food_potato);
         button1 = findViewById(R.id.btn_back);
         button1.setOnClickListener(this);
     }

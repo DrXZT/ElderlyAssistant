@@ -22,7 +22,7 @@ public class SportsActivity extends AppCompatActivity implements View.OnClickLis
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sports);
+        setContentView(R.layout.sport_sports);
 
         button = findViewById(R.id.btn_back);
 

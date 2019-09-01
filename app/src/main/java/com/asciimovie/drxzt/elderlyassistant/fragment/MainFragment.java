@@ -74,7 +74,7 @@ public class MainFragment extends Fragment implements View.OnClickListener {
         button11 = view.findViewById(R.id.btn_news);
         button12 = view.findViewById(R.id.btn_radio);
         button13 = view.findViewById(R.id.btn_story);
-        button14 = view.findViewById(R.id.btn_add);
+//        button14 = view.findViewById(R.id.btn_add);
 
         button7.setOnClickListener(this);
         button8.setOnClickListener(this);
@@ -83,7 +83,7 @@ public class MainFragment extends Fragment implements View.OnClickListener {
         button11.setOnClickListener(this);
         button12.setOnClickListener(this);
         button13.setOnClickListener(this);
-        button14.setOnClickListener(this);
+//        button14.setOnClickListener(this);
         return view;
     }
 

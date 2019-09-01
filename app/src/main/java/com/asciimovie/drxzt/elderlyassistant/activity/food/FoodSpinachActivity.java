@@ -14,7 +14,7 @@ public class FoodSpinachActivity extends AppCompatActivity implements View.OnCli
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_food_spinach);
+        setContentView(R.layout.food_spinach);
         button1 = findViewById(R.id.btn_back);
         button1.setOnClickListener(this);
     }

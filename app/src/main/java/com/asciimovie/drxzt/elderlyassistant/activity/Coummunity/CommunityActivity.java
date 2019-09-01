@@ -12,7 +12,7 @@ public class CommunityActivity extends AppCompatActivity implements View.OnClick
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_community);
+        setContentView(R.layout.community_community);
         Button button1 = findViewById(R.id.btn_volunteer);
         Button button2 = findViewById(R.id.btn_sale);
         Button button3 = findViewById(R.id.btn_service);
