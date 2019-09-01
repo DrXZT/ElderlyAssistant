@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.asciimovie.drxzt.elderlyassistant">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+<<<<<<< Updated upstream
+        <activity android:name=".activity.TaijiquanActivity"></activity>
+        <activity android:name=".activity.SquaredanceActivity" />
+        <activity android:name=".activity.ExerciseActivity" />
+        <activity android:name=".activity.RunActivity" />
+        <activity android:name=".activity.WalkActivity" />
+        <activity android:name=".activity.SportsActivity" />
+        <activity android:name=".activity.food.FoodBaconActivity" />
+        <activity android:name=".activity.food.FoodPineappleActivity" />
+        <activity android:name=".activity.food.FoodPotatoActivity" />
+        <activity android:name=".activity.food.FoodShrimpActivity" />
+        <activity android:name=".activity.food.FoodSpinachActivity" />
+        <activity android:name=".activity.FestivalsActivity" />
+        <activity android:name=".activity.ServiceActivity" />
+        <activity android:name=".activity.SaleActivity" />
+        <activity android:name=".activity.VolunteerActivity" />
+        <activity android:name=".activity.food.FoodActivity" />
+        <activity android:name=".activity.CommunityActivity" />
+        =======
+        <activity android:name=".activity.user.TaijiquanActivity" />
+        <activity android:name=".activity.user.SquaredanceActivity" />
+        <activity android:name=".activity.user.ExerciseActivity" />
+        <activity android:name=".activity.user.RunActivity" />
+        <activity android:name=".activity.user.WalkActivity" />
+        <activity android:name=".activity.user.SleepActivity" />
+        <activity android:name=".activity.user.FoodBaconActivity" />
+        <activity android:name=".activity.user.FoodPineappleActivity" />
+        <activity android:name=".activity.user.FoodPotatoActivity" />
+        <activity android:name=".activity.user.FoodShrimpActivity" />
+        <activity android:name=".activity.user.FoodSpinachActivity" />
+        <activity android:name=".activity.user.FestivalsActivity" />
+        <activity android:name=".activity.user.ServiceActivity" />
+        <activity android:name=".activity.user.SaleActivity" />
+        <activity android:name=".activity.user.VolunteerActivity" />
+        <activity android:name=".activity.user.FoodActivity" />
+        <activity android:name=".activity.user.CommunityActivity" />
+         =======
+            <activity android:name=".activity.food.FoodFragrantfloweredgarlicEggActivity"></activity>
+            <activity android:name=".activity.food.FoodSesameKelpActivity" />
+            <activity android:name=".activity.food.FoodLeanmeatGreenchineseonionActivity" />
+            <activity android:name=".activity.food.FoodPorkGarlicActivity" />
+            <activity android:name=".activity.food.FoodBeefPotatoActivity" />
+            <activity android:name=".activity.food.FoodTofuCarrotActivity" />
+            <activity android:name=".activity.user.SleepActivity" />
+            <activity android:name=".activity.food.FoodLiverSpinachActivity" />
+>>>>>>> Stashed changes
+        <activity android:name=".activity.user.LoginActivity" />
+        <activity android:name=".activity.main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

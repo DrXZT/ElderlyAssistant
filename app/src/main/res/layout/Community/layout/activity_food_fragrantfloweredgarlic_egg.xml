@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".activity.FragrantfloweredgarlicEggActivity"
+android:background="#ffffff">
+
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent">
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="45dp"
+        android:layout_height="35dp"
+        app:layout_constraintTop_toTopOf="@+id/parent"
+        app:layout_constraintLeft_toLeftOf="@+id/parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/back"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="韭菜-鸡蛋"
+        android:textSize="35sp"
+        android:textColor="#000000"
+        app:layout_constraintLeft_toLeftOf="@+id/parent"
+        app:layout_constraintRight_toRightOf="@+id/parent"
+        app:layout_constraintTop_toTopOf="@+id/parent"
+        android:layout_marginTop="34dp"/>
+
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="350dp"
+        android:layout_height="650dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/fragrantfloweredgarlic_egg"
+        app:layout_constraintLeft_toLeftOf="@+id/parent"
+        app:layout_constraintRight_toRightOf="@+id/parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_back" />
+
+    <Button
+        android:id="@+id/btn_collect"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="344dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/star"
+        app:layout_constraintLeft_toLeftOf="@+id/parent"
+        app:layout_constraintTop_toTopOf="@+id/parent" />
+
+
+</android.support.constraint.ConstraintLayout>
+
+
+</ScrollView>
