@@ -10,8 +10,7 @@ import com.asciimovie.drxzt.elderlyassistant.R;
 import com.asciimovie.drxzt.elderlyassistant.activity.Coummunity.*;
 import com.asciimovie.drxzt.elderlyassistant.activity.main.MainActivity;
 
-public class
-CommunityActivity extends AppCompatActivity implements View.OnClickListener {
+public class CommunityActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

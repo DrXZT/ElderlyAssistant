@@ -27,7 +27,8 @@
         android:text="手机号登录"
         app:layout_constraintTop_toTopOf="@+id/btn_back"
         app:layout_constraintLeft_toLeftOf="@+id/parent"
-        app:layout_constraintRight_toRightOf="@+id/parent"/>
+        app:layout_constraintRight_toRightOf="@+id/parent"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_back"/>
 
     <TextView
         android:id="@+id/tv_pn"
@@ -119,12 +120,12 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_title"
         app:layout_constraintLeft_toLeftOf="@+id/parent"
         app:layout_constraintRight_toRightOf="@+id/parent"
-        android:layout_marginRight="@+id/parent"
         android:layout_marginTop="270dp"
         android:text="登录"
         android:textSize="25sp"
         android:textColor="#000000"
-        android:background="@drawable/btn_login"/>
+        android:background="@drawable/btn_login"
+        />
 
 
 

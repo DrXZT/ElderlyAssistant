@@ -31,8 +31,8 @@
         <activity android:name=".activity.Coummunity.ServiceActivity" />
         <activity android:name=".activity.Coummunity.SaleActivity" />
         <activity android:name=".activity.Coummunity.VolunteerActivity" />
+        <activity android:name=".activity.CommunityActivity"></activity>
         <activity android:name=".activity.food.FoodActivity" />
-        <activity android:name=".activity.Coummunity.CommunityActivity" />
         <activity android:name=".activity.user.LoginActivity" />
         <activity android:name=".activity.main.MainActivity">
             <intent-filter>
