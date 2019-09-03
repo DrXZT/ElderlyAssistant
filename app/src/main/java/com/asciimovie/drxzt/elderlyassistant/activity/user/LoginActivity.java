@@ -49,16 +49,23 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
         mBtn_back = findViewById(R.id.btn_back);
+
         //mLogin_password=  findViewById(R.id.login_password);
         mBtn_getCode = findViewById(R.id.btn_getCode);
         mBtn_login =  findViewById(R.id.btn_login);
         mLogin_phone=findViewById(R.id.phone);
+
+        mBtn_back.setOnClickListener(this);
+        mBtn_login.setOnClickListener(this);
 
     }
 
     @Override
     public void onClick(View v)  {
         switch (v.getId()){
+            case R.id.btn_back:
+                Intent intent = new Intent(LoginActivity.this,MainActivity.class);
+                startActivity(intent);
 
             case R.id.btn_login:
                 new Thread(() -> {

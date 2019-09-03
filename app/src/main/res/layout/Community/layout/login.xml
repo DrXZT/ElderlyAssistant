@@ -119,7 +119,6 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_title"
         app:layout_constraintLeft_toLeftOf="@+id/parent"
         app:layout_constraintRight_toRightOf="@+id/parent"
-        android:layout_marginRight="@+id/parent"
         android:layout_marginTop="270dp"
         android:text="登录"
         android:textSize="25sp"

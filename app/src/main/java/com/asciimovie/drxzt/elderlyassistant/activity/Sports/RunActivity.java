@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.asciimovie.drxzt.elderlyassistant.R;
-import com.asciimovie.drxzt.elderlyassistant.activity.CommunityActivity;
+
 
 public class RunActivity extends AppCompatActivity implements View.OnClickListener {
     Button button1;
@@ -25,7 +25,7 @@ public class RunActivity extends AppCompatActivity implements View.OnClickListen
     public void onClick(View v) {
         switch(v.getId()){
             case R.id.btn_back:
-                Intent intent1 = new Intent(RunActivity.this, CommunityActivity.class);
+                Intent intent1 = new Intent(RunActivity.this, SportsActivity.class);
                 startActivity(intent1);
         }
     }

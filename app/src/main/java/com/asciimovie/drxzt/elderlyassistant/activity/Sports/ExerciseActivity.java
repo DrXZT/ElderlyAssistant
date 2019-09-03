@@ -7,7 +7,8 @@ import android.view.View;
 import android.widget.Button;
 
 import com.asciimovie.drxzt.elderlyassistant.R;
-import com.asciimovie.drxzt.elderlyassistant.activity.CommunityActivity;
+import com.asciimovie.drxzt.elderlyassistant.activity.Coummunity.CommunityActivity;
+
 
 public class ExerciseActivity extends AppCompatActivity implements View.OnClickListener {
 

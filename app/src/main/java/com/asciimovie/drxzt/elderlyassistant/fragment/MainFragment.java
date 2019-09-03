@@ -18,7 +18,8 @@ import android.widget.PopupWindow;
 
 
 import com.asciimovie.drxzt.elderlyassistant.R;
-import com.asciimovie.drxzt.elderlyassistant.activity.CommunityActivity;
+
+import com.asciimovie.drxzt.elderlyassistant.activity.Coummunity.CommunityActivity;
 import com.asciimovie.drxzt.elderlyassistant.activity.Sports.SportsActivity;
 import com.asciimovie.drxzt.elderlyassistant.activity.food.FoodActivity;
 import com.asciimovie.drxzt.elderlyassistant.activity.main.MainActivity;

@@ -31,8 +31,9 @@ public class SportsActivity extends AppCompatActivity implements View.OnClickLis
         button3 = findViewById(R.id.btn_exercise);
         button4 = findViewById(R.id.btn_squaredance);
         button5 = findViewById(R.id.btn_taijiquan);
+    
 
-
+        button.setOnClickListener(this);
         button1.setOnClickListener(this);
         button2.setOnClickListener(this);
         button3.setOnClickListener(this);
