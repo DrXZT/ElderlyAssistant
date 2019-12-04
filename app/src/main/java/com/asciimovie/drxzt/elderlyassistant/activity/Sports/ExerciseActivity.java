@@ -25,8 +25,7 @@ public class ExerciseActivity extends AppCompatActivity implements View.OnClickL
     public void onClick(View v) {
         switch(v.getId()){
             case R.id.btn_back:
-                Intent intent1 = new Intent(ExerciseActivity.this, CommunityActivity.class);
-                startActivity(intent1);
+                onBackPressed();
         }
 
     }
