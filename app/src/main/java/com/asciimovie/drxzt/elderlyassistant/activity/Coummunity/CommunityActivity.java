@@ -10,7 +10,8 @@ import com.asciimovie.drxzt.elderlyassistant.R;
 
 import com.asciimovie.drxzt.elderlyassistant.activity.main.MainActivity;
 
-public class CommunityActivity extends AppCompatActivity implements View.OnClickListener {
+public class
+CommunityActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,11 +34,11 @@ public class CommunityActivity extends AppCompatActivity implements View.OnClick
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btn_back:
-                Intent intent = new Intent(CommunityActivity.this, MainActivity.class);
+                Intent intent = new Intent(CommunityActivity.this,MainActivity.class);
                 startActivity(intent);
                 break;
             case R.id.btn_volunteer:
-                Intent intent1 = new Intent(CommunityActivity.this ,VolunteerActivity.class);
+                Intent intent1 = new Intent(CommunityActivity.this,VolunteerActivity.class);
                 startActivity(intent1);
                 break;
             case R.id.btn_sale:
