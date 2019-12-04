@@ -22,6 +22,12 @@ CommunityActivity extends AppCompatActivity implements View.OnClickListener {
         Button button2 = findViewById(R.id.btn_sale);
         Button button3 = findViewById(R.id.btn_service);
         Button button4 = findViewById(R.id.btn_festivals);
+
+        button.setOnClickListener(this);
+        button1.setOnClickListener(this);
+        button2.setOnClickListener(this);
+        button3.setOnClickListener(this);
+        button4.setOnClickListener(this);
     }
 
     @Override

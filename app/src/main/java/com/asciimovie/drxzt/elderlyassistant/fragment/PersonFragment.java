@@ -24,7 +24,6 @@ public class PersonFragment extends Fragment implements View.OnClickListener  {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_person, container, false);
-
         button5 = view.findViewById(R.id.btn_head);
         button6 = view.findViewById(R.id.btn_head2);
 

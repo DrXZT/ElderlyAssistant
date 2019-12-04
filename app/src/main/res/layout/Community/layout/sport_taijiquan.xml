@@ -67,7 +67,7 @@
             app:layout_constraintLeft_toLeftOf="@id/iv_link"
             android:layout_marginTop="35dp"
             android:background="#18709e"/>
-        <Button
+        <TextView
             android:id="@+id/btn_link"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
