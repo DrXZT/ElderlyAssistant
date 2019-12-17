@@ -1,12 +1,14 @@
 package com.asciimovie.drxzt.elderlyassistant.activity.Coummunity;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 
 import com.asciimovie.drxzt.elderlyassistant.R;
+import com.asciimovie.drxzt.elderlyassistant.activity.main.MainActivity;
 
 public class VolunteerActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -45,7 +47,8 @@ public class VolunteerActivity extends AppCompatActivity implements View.OnClick
                 break;
             }
             case R.id.view_back:{
-                onBackPressed();
+                Intent intent = new Intent(VolunteerActivity.this, CommunityActivity.class);
+                startActivity(intent);
                 break;
             }
         }

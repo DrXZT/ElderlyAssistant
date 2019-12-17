@@ -1,7 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".activity.Sports.ExerciseActivity"
+    android:background="#f5f5f5">
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_porkGarlic"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="猪肉—大蒜"
+            android:textSize="30dp"
+            android:textColor="#000000"
+            android:background="#ffffff"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <Button
+        android:id="@+id/btn_beefPotato"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="牛肉—土豆"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:background="#ffffff"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_porkGarlic"/>
+
+        <Button
+            android:id="@+id/btn_meantGreen"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="瘦肉—大葱"
+            android:textSize="30dp"
+            android:textColor="#000000"
+            android:background="#ffffff"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_beefPotato"/>
+        <Button
+            android:id="@+id/btn_sesameKelp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="芝麻—海带"
+            android:textSize="30dp"
+            android:textColor="#000000"
+            android:background="#ffffff"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_meantGreen"/>
+        <Button
+            android:id="@+id/btn_liverSpinach"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="猪肝—菠菜"
+            android:textSize="30dp"
+            android:textColor="#000000"
+            android:background="#ffffff"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_sesameKelp"/>
+        <Button
+            android:id="@+id/btn_tofuCarrot"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="豆腐—萝卜"
+            android:textSize="30dp"
+            android:textColor="#000000"
+            android:background="#ffffff"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_liverSpinach"/>
+        <Button
+            android:id="@+id/btn_fragrantEgg"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="韭菜—鸡蛋"
+            android:textSize="30dp"
+            android:textColor="#000000"
+            android:background="#ffffff"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_tofuCarrot"/>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</ScrollView>
