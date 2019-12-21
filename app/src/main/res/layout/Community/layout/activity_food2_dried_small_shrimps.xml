@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.food.FoodCeleryActivity"
+    tools:context=".activity.food.Food2DriedSmallShrimpsActivity"
     android:background="#ffffff">
 
     <android.support.constraint.ConstraintLayout
@@ -24,7 +24,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="桃仁拌芹菜"
+            android:text="菜心炒虾皮"
             android:textSize="35sp"
             android:textColor="#000000"
             app:layout_constraintLeft_toLeftOf="@+id/parent"
@@ -38,7 +38,7 @@
             android:layout_width="350dp"
             android:layout_height="650dp"
             android:layout_marginTop="20dp"
-            android:src="@drawable/celery"
+            android:src="@drawable/dried_small_shrimps"
             app:layout_constraintLeft_toLeftOf="@+id/parent"
             app:layout_constraintRight_toRightOf="@+id/parent"
             app:layout_constraintTop_toBottomOf="@+id/btn_back" />

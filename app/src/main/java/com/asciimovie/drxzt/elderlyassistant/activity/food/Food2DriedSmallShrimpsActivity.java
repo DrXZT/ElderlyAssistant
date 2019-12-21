@@ -8,22 +8,21 @@ import android.widget.Button;
 
 import com.asciimovie.drxzt.elderlyassistant.R;
 
-public class FoodCeleryActivity extends AppCompatActivity implements View.OnClickListener {
+public class Food2DriedSmallShrimpsActivity extends AppCompatActivity implements View.OnClickListener{
     Button button1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_food_celery);
+        setContentView(R.layout.activity_food2_dried_small_shrimps);
         button1 = findViewById(R.id.btn_back);
         button1.setOnClickListener(this);
     }
-
     @Override
     public void onClick(View v) {
-        switch (v.getId()) {
+        switch (v.getId()){
             case R.id.btn_back:
-                Intent intent1 = new Intent(FoodCeleryActivity.this,FoodActivity.class);
+                Intent intent1 = new Intent(Food2DriedSmallShrimpsActivity.this,FoodActivity.class);
                 startActivity(intent1);
                 break;
         }
