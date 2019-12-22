@@ -23,9 +23,11 @@ import com.asciimovie.drxzt.elderlyassistant.R;
 import com.asciimovie.drxzt.elderlyassistant.activity.Coummunity.CommunityActivity;
 import com.asciimovie.drxzt.elderlyassistant.activity.Sleep.SleepActivity;
 import com.asciimovie.drxzt.elderlyassistant.activity.Sports.SportsActivity;
+import com.asciimovie.drxzt.elderlyassistant.activity.Story.StoryActivity;
 import com.asciimovie.drxzt.elderlyassistant.activity.food.FoodActivity;
 import com.asciimovie.drxzt.elderlyassistant.activity.main.MainActivity;
 import com.asciimovie.drxzt.elderlyassistant.activity.news.NewsActivity;
+import com.asciimovie.drxzt.elderlyassistant.activity.radio.RadioActivity;
 import com.asciimovie.drxzt.elderlyassistant.activity.time.TimeSelectActivity;
 
 import org.litepal.LitePal;
@@ -131,6 +133,14 @@ public class MainFragment extends Fragment implements View.OnClickListener {
             case R.id.btn_sleep:
                 Intent intentSleep = new Intent(getActivity(), SleepActivity.class);
                 startActivity(intentSleep);
+                break;
+            case R.id.btn_radio:
+                Intent intentradio = new Intent(getActivity(), RadioActivity.class);
+                startActivity(intentradio);
+                break;
+            case R.id.btn_story:
+                Intent intentstory = new Intent(getActivity(), StoryActivity.class);
+                startActivity(intentstory);
                 break;
 
             case R.id.view_timeselect:

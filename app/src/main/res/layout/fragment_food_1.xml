@@ -35,7 +35,7 @@
         android:id="@+id/btn_medlar"
         android:layout_width="360dp"
         android:layout_height="130dp"
-        android:background="@drawable/food2_3_medlar"
+        android:background="@drawable/foodmedlar"
         android:layout_marginTop="30dp"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"

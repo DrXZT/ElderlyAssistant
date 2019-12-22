@@ -38,9 +38,7 @@ public class FragmentFood2 extends Fragment implements View.OnClickListener {
 
     protected BaseActivity mActivity;
 
-//    public FragmentFood2() {
-//        super(R.layout.fragment_food_2);
-//    }
+
 
     @Nullable
     @Override

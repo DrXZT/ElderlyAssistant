@@ -42,15 +42,15 @@
 
 
         <ImageView
-            android:layout_width="400dp"
+            android:layout_width="390dp"
             android:layout_height="1200dp"
-            android:src="@drawable/festivalstext"
+            android:layout_marginTop="16dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/festivaltext"
+            app:layout_constraintHorizontal_bias="0.454"
             app:layout_constraintLeft_toLeftOf="@+id/parent"
             app:layout_constraintRight_toRightOf="@+id/parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:scaleType="fitCenter"
-            android:layout_marginTop="10dp"
- />
+            app:layout_constraintTop_toTopOf="parent" />
 
 
     </android.support.constraint.ConstraintLayout>

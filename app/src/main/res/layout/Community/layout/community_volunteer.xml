@@ -85,12 +85,10 @@
             app:layout_constraintLeft_toLeftOf="@+id/parent"
             app:layout_constraintRight_toRightOf="@+id/parent" />
 
-        <ImageView
+        <View
             android:layout_width="350dp"
             android:layout_height="600dp"
-
-            android:background="@drawable/tx"
-
+            android:background="@drawable/volunteertext"
             app:layout_constraintTop_toBottomOf="@id/tv_1"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
