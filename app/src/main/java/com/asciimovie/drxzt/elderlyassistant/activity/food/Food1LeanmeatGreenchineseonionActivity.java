@@ -10,7 +10,7 @@ import com.asciimovie.drxzt.elderlyassistant.R;
 public class Food1LeanmeatGreenchineseonionActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button btn_back;
-    Button btn_collect;
+    View btn_collect;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

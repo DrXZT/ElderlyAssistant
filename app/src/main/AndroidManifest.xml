@@ -13,6 +13,9 @@
         android:theme="@style/AppTheme">
         <activity android:name=".activity.food.FoodCeleryActivity"></activity>
         <activity android:name=".fragment.AddActivity" />
+        <activity android:name=".fragment.FragmentFood1" />
+        <activity android:name=".fragment.FragmentFood2" />
+        <activity android:name=".fragment.FragmentFood3" />
         <activity android:name=".activity.food.Note2Activity" />
         <activity android:name=".activity.food.Note1Activity" /> <!-- android:appComponentFactory="" -->
         <!-- tools:replace="android:appComponentFactory" -->
@@ -40,6 +43,15 @@
         <activity android:name=".activity.food.Food1LiverSpinachActivity" />
         <activity android:name=".activity.food.Food1TofuCarrotActivity" />
         <activity android:name=".activity.food.Food1FragrantfloweredgarlicEggActivity" />
+
+        <activity android:name=".activity.news.NewsActivity" />
+        <activity android:name=".activity.news.News1Activity" />
+        <activity android:name=".activity.news.News2Activity" />
+        <activity android:name=".activity.news.News3Activity" />
+        <activity android:name=".activity.news.News4Activity" />
+
+        <activity android:name=".activity.Story.StoryActivity"/>
+        <activity android:name=".activity.Story.Stroy2Activity"/>
 
         <activity android:name=".activity.food.FoodActivity" />
         <activity android:name=".activity.user.LoginActivity" />

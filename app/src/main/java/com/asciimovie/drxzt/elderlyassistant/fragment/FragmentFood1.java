@@ -10,17 +10,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+
 import com.asciimovie.drxzt.elderlyassistant.R;
-import com.asciimovie.drxzt.elderlyassistant.activity.food.Food2CrucianActivity;
-import com.asciimovie.drxzt.elderlyassistant.activity.food.Food2DriedSmallShrimpsActivity;
-import com.asciimovie.drxzt.elderlyassistant.activity.food.Food2FishHeadActivity;
-import com.asciimovie.drxzt.elderlyassistant.activity.food.Food2MedlarActivity;
-import com.asciimovie.drxzt.elderlyassistant.activity.food.FoodBaconActivity;
-import com.asciimovie.drxzt.elderlyassistant.activity.food.FoodCeleryActivity;
-import com.asciimovie.drxzt.elderlyassistant.activity.food.FoodPineappleActivity;
-import com.asciimovie.drxzt.elderlyassistant.activity.food.FoodPotatoActivity;
-import com.asciimovie.drxzt.elderlyassistant.activity.food.FoodShrimpActivity;
-import com.asciimovie.drxzt.elderlyassistant.activity.food.FoodSpinachActivity;
+import com.asciimovie.drxzt.elderlyassistant.activity.food.*;
+
 
 public class FragmentFood1 extends Fragment implements View.OnClickListener{
     Button btn_celery;
@@ -28,11 +21,7 @@ public class FragmentFood1 extends Fragment implements View.OnClickListener{
     Button btn_medlar;
     Button btn_crucian;
     Button btn_fishhead;
-    Button btn_collect1;
-    Button btn_collect2;
-    Button btn_collect3;
-    Button btn_collect4;
-    Button btn_collect5;
+
 
     @Nullable
     @Override
@@ -43,28 +32,14 @@ public class FragmentFood1 extends Fragment implements View.OnClickListener{
         btn_medlar = view.findViewById(R.id.btn_medlar);
         btn_crucian = view.findViewById(R.id.btn_crucian);
         btn_fishhead = view.findViewById(R.id.btn_fishhead);
-        btn_collect1 = view.findViewById(R.id.btn_collect1);
-        btn_collect2 = view.findViewById(R.id.btn_collect2);
-        btn_collect3 = view.findViewById(R.id.btn_collect3);
-        btn_collect4 = view.findViewById(R.id.btn_collect4);
-        btn_collect5 = view.findViewById(R.id.btn_collect5);
 
         btn_celery.setOnClickListener(this);
         btn_dried_small_shrimps.setOnClickListener(this);
         btn_medlar.setOnClickListener(this);
         btn_crucian.setOnClickListener(this);
         btn_fishhead.setOnClickListener(this);
-        btn_collect1.setOnClickListener(this);
-        btn_collect2.setOnClickListener(this);
-        btn_collect3.setOnClickListener(this);
-        btn_collect4.setOnClickListener(this);
-        btn_collect5.setOnClickListener(this);
 
         return view;
-    }
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
     }
 
     @Override

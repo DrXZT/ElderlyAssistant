@@ -10,16 +10,15 @@ import com.asciimovie.drxzt.elderlyassistant.R;
 public class Food1BeefPotatoActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button btn_back;
-    Button btn_collect;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.food1_beef_potato);
         btn_back = findViewById(R.id.btn_back);
-        btn_collect = findViewById(R.id.btn_collect);
         btn_back.setOnClickListener(this);
-        btn_collect.setOnClickListener(this);
+
     }
 
     @Override

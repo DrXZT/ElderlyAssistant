@@ -115,10 +115,6 @@ public class MainFragment extends Fragment implements View.OnClickListener {
                 Intent intent5 = new Intent(getActivity(), SportsActivity.class);
                 startActivity(intent5);
                 break;
-            case R.id.btn_add:
-                Intent intent6 = new Intent(getActivity(), AddActivity.class);
-                startActivity(intent6);
-                break;
             case R.id.btn_news:
                 Intent intent7 = new Intent(getActivity(), NewsActivity.class);
                 startActivity(intent7);
