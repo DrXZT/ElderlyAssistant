@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
-
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/Parent"
@@ -37,13 +34,14 @@
             android:layout_marginTop="10dp"
             android:layout_marginLeft="80dp"
             android:background="@drawable/head"/>
+
         <TextView
             android:id="@+id/btn_head2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="@+id/parent"
             app:layout_constraintLeft_toRightOf="@+id/btn_head"
-             android:layout_marginLeft="50dp"
+            android:layout_marginLeft="50dp"
             android:text="点击登录"
             android:layout_marginTop="100dp"
 

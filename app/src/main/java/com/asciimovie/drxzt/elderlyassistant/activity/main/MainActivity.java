@@ -11,14 +11,16 @@ import android.view.View;
 import android.widget.Button;
 
 import com.asciimovie.drxzt.elderlyassistant.R;
+import com.asciimovie.drxzt.elderlyassistant.base.BaseActivity;
 import com.asciimovie.drxzt.elderlyassistant.fragment.CallFragment;
 import com.asciimovie.drxzt.elderlyassistant.fragment.MainFragment;
 import com.asciimovie.drxzt.elderlyassistant.fragment.MessageFragment;
+import com.asciimovie.drxzt.elderlyassistant.fragment.Person2Fragment;
 import com.asciimovie.drxzt.elderlyassistant.fragment.PersonFragment;
 
 
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     Button button1;
     Button button2;
@@ -76,15 +78,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
                 break;
             case R.id.person_tab:
-                replaceFragment(new PersonFragment());
+                if(sure==1){
+                    replaceFragment(new Person2Fragment());
+
+                }else{
+                    replaceFragment(new PersonFragment());
+
+                }
+
                 break;
-
-
-
-
             default:
                 break;
-
         }
 
     }

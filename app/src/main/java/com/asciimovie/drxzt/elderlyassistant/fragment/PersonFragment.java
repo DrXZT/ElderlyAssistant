@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.asciimovie.drxzt.elderlyassistant.R;
@@ -17,8 +18,8 @@ import com.asciimovie.drxzt.elderlyassistant.activity.user.LoginActivity;
 
 public class PersonFragment extends Fragment implements View.OnClickListener  {
 
-    Button button5;
-    Button button6;
+    TextView button5;
+    TextView button6;
 
 
     @Nullable

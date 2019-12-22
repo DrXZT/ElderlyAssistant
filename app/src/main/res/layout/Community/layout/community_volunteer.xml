@@ -85,7 +85,7 @@
             app:layout_constraintLeft_toLeftOf="@+id/parent"
             app:layout_constraintRight_toRightOf="@+id/parent" />
 
-        <View
+        <ImageView
             android:layout_width="350dp"
             android:layout_height="600dp"
 
@@ -95,8 +95,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            tools:layout_editor_absoluteY="0dp" />
+            android:layout_marginRight="10dp" />
 
     </android.support.constraint.ConstraintLayout>
 

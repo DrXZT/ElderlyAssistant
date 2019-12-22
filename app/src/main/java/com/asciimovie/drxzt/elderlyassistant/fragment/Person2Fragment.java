@@ -19,10 +19,11 @@ public class Person2Fragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_person2,container,false);
-        Bundle bundle = getArguments();
-        //获取传递过来的个人信息
-        String userInfo = bundle.getString("user");
-        UserDO userDO = JSONObject.parseObject(userInfo,UserDO.class);
+
+//        Bundle bundle = getArguments();
+//        //获取传递过来的个人信息
+//        String userInfo = bundle.getString("user");
+//        UserDO userDO = JSONObject.parseObject(userInfo,UserDO.class);
         return view;
     }
 }
