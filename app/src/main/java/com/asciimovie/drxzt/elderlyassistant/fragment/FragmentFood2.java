@@ -34,6 +34,8 @@ import butterknife.OnClick;
 public class FragmentFood2 extends Fragment implements View.OnClickListener {
 
 
+
+
     protected BaseActivity mActivity;
 
 //    public FragmentFood2() {
