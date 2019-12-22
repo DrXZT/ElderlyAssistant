@@ -8,6 +8,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.asciimovie.drxzt.elderlyassistant.R;
 import com.asciimovie.drxzt.elderlyassistant.activity.food.Food1BeefPotatoActivity;
@@ -21,9 +22,13 @@ import com.asciimovie.drxzt.elderlyassistant.base.BaseActivity;
 
 import java.io.Serializable;
 
+import butterknife.BindView;
 import butterknife.OnClick;
 
 public class FragmentFood2 extends Fragment {
+
+    @BindView(R.id.btn_porkGarlic)
+    TextView tvMenu4;
 
     protected BaseActivity mActivity;
     @Nullable
