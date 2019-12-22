@@ -76,9 +76,6 @@ public class FragmentMain extends Fragment implements View.OnClickListener {
                 break;
             default:
                 break;
-
         }
-
-
     }
 }
