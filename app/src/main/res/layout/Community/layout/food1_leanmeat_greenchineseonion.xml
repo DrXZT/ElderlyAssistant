@@ -37,8 +37,10 @@
             android:id="@+id/iv"
             android:layout_width="350dp"
             android:layout_height="650dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/white"
             android:src="@drawable/leanmeat_greenchineseonion"
+            app:layout_constraintHorizontal_bias="0.491"
             app:layout_constraintLeft_toLeftOf="@+id/parent"
             app:layout_constraintRight_toRightOf="@+id/parent"
             app:layout_constraintTop_toBottomOf="@+id/btn_back" />

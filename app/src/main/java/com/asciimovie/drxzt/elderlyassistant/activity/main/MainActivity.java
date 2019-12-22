@@ -85,7 +85,6 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                     replaceFragment(new PersonFragment());
 
                 }
-
                 break;
             default:
                 break;
