@@ -43,7 +43,7 @@
             app:layout_constraintRight_toRightOf="@+id/parent"
             app:layout_constraintTop_toBottomOf="@+id/btn_back" />
 
-        <Button
+        <View
             android:id="@+id/btn_collect"
             android:layout_width="35dp"
             android:layout_height="35dp"
