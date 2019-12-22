@@ -32,6 +32,15 @@
         <activity android:name=".activity.Coummunity.SaleActivity" />
         <activity android:name=".activity.Coummunity.VolunteerActivity" />
         <activity android:name=".activity.CommunityActivity"></activity>
+
+        <activity android:name=".activity.food.Food1PorkGarlicActivity" />
+        <activity android:name=".activity.food.Food1BeefPotatoActivity" />
+        <activity android:name=".activity.food.Food1LeanmeatGreenchineseonionActivity" />
+        <activity android:name=".activity.food.Food1SesameKelpActivity" />
+        <activity android:name=".activity.food.Food1LiverSpinachActivity" />
+        <activity android:name=".activity.food.Food1TofuCarrotActivity" />
+        <activity android:name=".activity.food.Food1FragrantfloweredgarlicEggActivity" />
+
         <activity android:name=".activity.food.FoodActivity" />
         <activity android:name=".activity.user.LoginActivity" />
         <activity android:name=".activity.main.MainActivity">

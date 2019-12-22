@@ -68,7 +68,6 @@ public class FoodActivity extends AppCompatActivity implements View.OnClickListe
                 button1.setTextColor(Color.parseColor("#4e4e4e"));
                 button2.setTextColor(Color.BLACK);
                 button3.setTextColor(Color.parseColor("#4e4e4e"));
-
                 break;
             case R.id.rb_3:
                 replaceFragment(new FragmentFood3());
