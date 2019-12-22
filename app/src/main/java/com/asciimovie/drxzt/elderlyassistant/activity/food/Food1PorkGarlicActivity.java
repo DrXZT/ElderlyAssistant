@@ -12,4 +12,6 @@ public class Food1PorkGarlicActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.food1_pork_garlic);
     }
+
+
 }

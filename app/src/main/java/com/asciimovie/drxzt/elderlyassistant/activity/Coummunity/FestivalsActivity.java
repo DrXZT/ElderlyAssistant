@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.asciimovie.drxzt.elderlyassistant.R;
-import com.asciimovie.drxzt.elderlyassistant.activity.CommunityActivity;
+
 
 public class FestivalsActivity extends AppCompatActivity implements View.OnClickListener {
     Button button1;
@@ -25,8 +25,7 @@ public class FestivalsActivity extends AppCompatActivity implements View.OnClick
     public void onClick(View v) {
         switch(v.getId()){
             case R.id.btn_back:
-                Intent intent1 = new Intent(FestivalsActivity.this, CommunityActivity.class);
-                startActivity(intent1);
+                onBackPressed();
                 break;
         }
     }

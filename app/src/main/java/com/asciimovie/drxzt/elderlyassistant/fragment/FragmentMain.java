@@ -11,9 +11,10 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.asciimovie.drxzt.elderlyassistant.R;
+import com.asciimovie.drxzt.elderlyassistant.activity.Coummunity.CommunityActivity;
 import com.asciimovie.drxzt.elderlyassistant.activity.Sports.SportsActivity;
 import com.asciimovie.drxzt.elderlyassistant.activity.food.FoodActivity;
-import com.asciimovie.drxzt.elderlyassistant.activity.CommunityActivity;
+
 
 public class FragmentMain extends Fragment implements View.OnClickListener {
 

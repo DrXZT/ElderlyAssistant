@@ -9,7 +9,7 @@
         android:id="@+id/parent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#ffffff">
+        android:background="#f5f5f5">
         <Button
             android:id="@+id/btn_back"
             android:layout_width="45dp"
@@ -29,14 +29,25 @@
             app:layout_constraintRight_toRightOf="@+id/parent"
             app:layout_constraintTop_toTopOf="@+id/parent"
             android:layout_marginTop="34dp"/>
-        <Button
+        <View
+            android:id="@+id/view_star"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="@id/iv_star"
+            app:layout_constraintLeft_toLeftOf="@id/iv_star"
+            app:layout_constraintRight_toRightOf="@id/iv_star"
+            app:layout_constraintBottom_toBottomOf="@id/iv_star"/>
+
+
+        <ImageView
+            android:id="@+id/iv_star"
             app:layout_constraintRight_toRightOf="@+id/parent"
             app:layout_constraintTop_toTopOf="@+id/parent"
             android:layout_marginTop="40dp"
             android:layout_marginRight="30dp"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:background="@drawable/star"/>
+            android:src="@drawable/star"/>
         <ImageView
             android:layout_width="350dp"
             android:layout_height="200dp"

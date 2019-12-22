@@ -9,30 +9,31 @@ import android.widget.ImageView;
 
 import com.asciimovie.drxzt.elderlyassistant.R;
 
-public class FoodSpinachActivity extends AppCompatActivity implements View.OnClickListener {
+public class Food2CrucianActivity extends AppCompatActivity implements View.OnClickListener{
     Button button1;
+
     private View view_star;
     private ImageView ivStar;
     private int choose=0;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.food_spinach);
+        setContentView(R.layout.activity_food2_crucian);
         button1 = findViewById(R.id.btn_back);
         button1.setOnClickListener(this);
-
 
         view_star=findViewById(R.id.view_star);
         ivStar=findViewById(R.id.iv_star);
         view_star.setOnClickListener(this);
         ivStar.setSelected(false);
     }
-
     @Override
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btn_back:
-                Intent intent1 = new Intent(FoodSpinachActivity.this,FoodActivity.class);
+                Intent intent1 = new Intent(Food2CrucianActivity.this,FoodActivity.class);
                 startActivity(intent1);
                 break;
             case R.id.view_star: {

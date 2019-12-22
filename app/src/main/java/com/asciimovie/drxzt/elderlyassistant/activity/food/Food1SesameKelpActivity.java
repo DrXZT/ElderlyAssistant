@@ -12,4 +12,5 @@ public class Food1SesameKelpActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.food1_sesame_kelp);
     }
+
 }

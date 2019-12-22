@@ -4,17 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".activity.food.Food2DriedSmallShrimpsActivity"
+    android:background="#ffffff">
 
-    tools:context=".activity.food.FoodSpinachActivity">
     <android.support.constraint.ConstraintLayout
-        android:id="@+id/parent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#f5f5f5">
+        android:id="@+id/parent">
+
         <Button
             android:id="@+id/btn_back"
             android:layout_width="45dp"
-            android:layout_height="30dp"
+            android:layout_height="35dp"
             app:layout_constraintTop_toTopOf="@+id/parent"
             app:layout_constraintLeft_toLeftOf="@+id/parent"
             android:layout_marginTop="40dp"
@@ -23,13 +24,25 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="土豆"
-            android:textSize="30sp"
+            android:text="菜心炒虾皮"
+            android:textSize="35sp"
             android:textColor="#000000"
             app:layout_constraintLeft_toLeftOf="@+id/parent"
             app:layout_constraintRight_toRightOf="@+id/parent"
             app:layout_constraintTop_toTopOf="@+id/parent"
             android:layout_marginTop="34dp"/>
+
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="350dp"
+            android:layout_height="650dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/dried_small_shrimps"
+            app:layout_constraintLeft_toLeftOf="@+id/parent"
+            app:layout_constraintRight_toRightOf="@+id/parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_back" />
+
         <View
             android:id="@+id/view_star"
             android:layout_width="0dp"
@@ -49,25 +62,9 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@drawable/star"/>
-        <ImageView
-            android:layout_width="350dp"
-            android:layout_height="200dp"
-            android:src="@drawable/potato"
-            app:layout_constraintLeft_toLeftOf="@+id/parent"
-            app:layout_constraintRight_toRightOf="@+id/parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn_back"
-            android:scaleType="fitCenter"
-            android:layout_marginTop="30dp"/>
-        <ImageView
-            android:layout_width="400dp"
-            android:layout_height="1400dp"
-            app:layout_constraintTop_toBottomOf="@+id/btn_back"
-            app:layout_constraintLeft_toLeftOf="@+id/parent"
-            app:layout_constraintRight_toRightOf="@+id/parent"
-            android:layout_marginTop="250dp"
-            android:src="@drawable/potatotext"/>
 
 
     </android.support.constraint.ConstraintLayout>
+
 
 </ScrollView>

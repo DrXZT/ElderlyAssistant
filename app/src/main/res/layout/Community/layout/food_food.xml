@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".activity.food.FoodActivity"
     android:id="@+id/parent"
-    android:background="#ffffff">
+    android:background="@color/fatewhite">
     <Button
         android:id="@+id/btn_back"
         android:layout_width="45dp"

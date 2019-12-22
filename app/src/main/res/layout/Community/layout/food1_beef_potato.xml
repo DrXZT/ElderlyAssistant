@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.FoodBeefPotatoActivity"
+    tools:context=".activity.food.Food1BeefPotatoActivity"
     android:background="#ffffff">
 
     <android.support.constraint.ConstraintLayout

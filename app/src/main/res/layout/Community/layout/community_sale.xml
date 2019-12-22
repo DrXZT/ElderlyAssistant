@@ -52,7 +52,7 @@
             android:layout_marginTop="100dp" />
 
         <ImageView
-            android:layout_width="500dp"
+            android:layout_width="400dp"
             android:layout_height="700dp"
             app:layout_constraintTop_toBottomOf="@id/iv_sale"
             app:layout_constraintLeft_toLeftOf="@+id/parent"

@@ -7,7 +7,8 @@ import android.view.View;
 import android.widget.Button;
 
 import com.asciimovie.drxzt.elderlyassistant.R;
-import com.asciimovie.drxzt.elderlyassistant.activity.CommunityActivity;
+import com.asciimovie.drxzt.elderlyassistant.activity.Sports.SportsActivity;
+
 
 public class SaleActivity extends AppCompatActivity implements View.OnClickListener {
     Button button1;
@@ -24,7 +25,7 @@ public class SaleActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch(v.getId()){
             case R.id.btn_back:
-                Intent intent1 = new Intent(SaleActivity.this, CommunityActivity.class);
+                Intent intent1 = new Intent(SaleActivity.this, SportsActivity.class);
                 startActivity(intent1);
 
         }
