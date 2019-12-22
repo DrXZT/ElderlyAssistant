@@ -23,6 +23,7 @@ import com.asciimovie.drxzt.elderlyassistant.activity.Coummunity.CommunityActivi
 import com.asciimovie.drxzt.elderlyassistant.activity.Sports.SportsActivity;
 import com.asciimovie.drxzt.elderlyassistant.activity.food.FoodActivity;
 import com.asciimovie.drxzt.elderlyassistant.activity.main.MainActivity;
+import com.asciimovie.drxzt.elderlyassistant.activity.news.NewsActivity;
 
 import org.litepal.LitePal;
 
@@ -101,6 +102,7 @@ public class MainFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
+
             case R.id.btn_community:
                 Intent intent3 = new Intent(getActivity(), CommunityActivity.class);
                 startActivity(intent3);
@@ -117,6 +119,11 @@ public class MainFragment extends Fragment implements View.OnClickListener {
                 Intent intent6 = new Intent(getActivity(), AddActivity.class);
                 startActivity(intent6);
                 break;
+            case R.id.btn_news:
+                Intent intent7 = new Intent(getActivity(), NewsActivity.class);
+                startActivity(intent7);
+                break;
+
             default:
                 break;
 

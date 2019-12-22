@@ -19,9 +19,11 @@ import android.widget.Toast;
 import com.alibaba.fastjson.JSONObject;
 import com.asciimovie.drxzt.elderlyassistant.activity.main.MainActivity;
 import com.asciimovie.drxzt.elderlyassistant.R;
+import com.asciimovie.drxzt.elderlyassistant.base.BaseActivity;
 import com.asciimovie.drxzt.elderlyassistant.entity.ResponseDo;
 import com.asciimovie.drxzt.elderlyassistant.entity.UserDO;
 import com.asciimovie.drxzt.elderlyassistant.fragment.Person2Fragment;
+import com.asciimovie.drxzt.elderlyassistant.fragment.PersonFragment;
 import com.asciimovie.drxzt.elderlyassistant.util.MyOkHttpPost;
 import com.asciimovie.drxzt.elderlyassistant.util.ToastUtil;
 
@@ -37,12 +39,14 @@ import okhttp3.Response;
 import static com.asciimovie.drxzt.elderlyassistant.enumtype.constant.SERVICE_URL;
 
 
-public class LoginActivity extends AppCompatActivity implements View.OnClickListener  {
+public class LoginActivity extends BaseActivity implements View.OnClickListener  {
     private Button mBtn_back;
     private EditText mLogin_password;
     private EditText mLogin_phone;
     private Button mBtn_getCode;
     private Button mBtn_login;
+
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -66,34 +70,42 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             case R.id.btn_back:
                 Intent intent = new Intent(LoginActivity.this,MainActivity.class);
                 startActivity(intent);
+                break;
 
             case R.id.btn_login:
-                new Thread(() -> {
-                String userPhone =mLogin_phone.getText().toString().trim();
-                String password=mLogin_password.getText().toString().trim();
-                try {
-                    JSONObject jsonObject =new JSONObject();
-                    jsonObject.put("phone",userPhone);
-                    jsonObject.put("password",password);
-                    MyOkHttpPost.PostJSONObject(SERVICE_URL+"/user/login",jsonObject.toString(), new Callback() {
-                        @Override
-                        public void onFailure(@NotNull Call call, @NotNull IOException e) {
-                            e.printStackTrace();
-                        }
-                        @Override
-                        public void onResponse(@NotNull Call call, @NotNull Response response) throws IOException {
-                            String responseData = Objects.requireNonNull(response.body()).string();
-                            parseJSONWithGSON(responseData);
-                        }
-                    });
-
-                }catch (Exception e){
-                    e.printStackTrace();
-                    ToastUtil.toast(LoginActivity.this,"登录失败");
-                }
-                }).start();
+//                new Thread(() -> {
+//                String userPhone =mLogin_phone.getText().toString().trim();
+//                String password=mLogin_password.getText().toString().trim();
+//                try {
+//                    JSONObject jsonObject =new JSONObject();
+//                    jsonObject.put("phone",userPhone);
+//                    jsonObject.put("password",password);
+//                    MyOkHttpPost.PostJSONObject(SERVICE_URL+"/user/login",jsonObject.toString(), new Callback() {
+//                        @Override
+//                        public void onFailure(@NotNull Call call, @NotNull IOException e) {
+//                            e.printStackTrace();
+//                        }
+//                        @Override
+//                        public void onResponse(@NotNull Call call, @NotNull Response response) throws IOException {
+//                            String responseData = Objects.requireNonNull(response.body()).string();
+//                            parseJSONWithGSON(responseData);
+//                        }
+//                    });
+//
+//                }catch (Exception e){
+//                    e.printStackTrace();
+//                    ToastUtil.toast(LoginActivity.this,"登录失败");
+//                }
+//                }).start();
+                sure=1;
                 Intent intent1 = new Intent(LoginActivity.this,MainActivity.class);
                 startActivity(intent1);
+
+                break;
+                default:
+                    break;
+
+
         }
 
     }

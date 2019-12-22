@@ -31,7 +31,7 @@
         <activity android:name=".activity.Coummunity.ServiceActivity" />
         <activity android:name=".activity.Coummunity.SaleActivity" />
         <activity android:name=".activity.Coummunity.VolunteerActivity" />
-        <activity android:name=".activity.CommunityActivity"></activity>
+        <activity android:name=".activity.Coummunity.CommunityActivity"></activity>
 
         <activity android:name=".activity.food.Food1PorkGarlicActivity" />
         <activity android:name=".activity.food.Food1BeefPotatoActivity" />
