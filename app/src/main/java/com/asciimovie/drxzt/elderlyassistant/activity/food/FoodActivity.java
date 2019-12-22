@@ -42,7 +42,10 @@ public class FoodActivity extends AppCompatActivity implements View.OnClickListe
         button2.setOnClickListener(this);
         button3.setOnClickListener(this);
 
-        replaceFragment(new FragmentFood3());
+        replaceFragment(new FragmentFood1());
+        button1.setTextColor(Color.BLACK);
+        button2.setTextColor(Color.parseColor("#4e4e4e"));
+        button3.setTextColor(Color.parseColor("#4e4e4e"));
 
 
     }
