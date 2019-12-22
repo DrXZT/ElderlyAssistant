@@ -74,8 +74,6 @@ public class FragmentMain extends Fragment implements View.OnClickListener {
                 Intent intent7 = new Intent(getActivity(), StoryActivity.class);
                 startActivity(intent7);
                 break;
-            default:
-                break;
         }
     }
 }
