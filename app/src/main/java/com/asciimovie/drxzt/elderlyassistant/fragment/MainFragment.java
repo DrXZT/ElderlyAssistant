@@ -21,6 +21,7 @@ import android.widget.PopupWindow;
 import com.asciimovie.drxzt.elderlyassistant.R;
 
 import com.asciimovie.drxzt.elderlyassistant.activity.Coummunity.CommunityActivity;
+import com.asciimovie.drxzt.elderlyassistant.activity.Sleep.SleepActivity;
 import com.asciimovie.drxzt.elderlyassistant.activity.Sports.SportsActivity;
 import com.asciimovie.drxzt.elderlyassistant.activity.food.FoodActivity;
 import com.asciimovie.drxzt.elderlyassistant.activity.main.MainActivity;
@@ -131,6 +132,10 @@ public class MainFragment extends Fragment implements View.OnClickListener {
                 startActivity(intent7);
                 break;
 
+            case R.id.btn_sleep:
+                Intent intentSleep = new Intent(getActivity(), SleepActivity.class);
+                startActivity(intentSleep);
+                break;
 
             case R.id.view_timeselect:
                 Intent intent8 = new Intent(getActivity(), TimeSelectActivity.class);

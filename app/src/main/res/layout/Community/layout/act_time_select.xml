@@ -117,7 +117,7 @@
         <LinearLayout
             android:id="@+id/show2"
             android:layout_width="0dp"
-            android:layout_height="300dp"
+            android:layout_height="260dp"
             android:layout_marginTop="200dp"
             android:layout_marginLeft="30dp"
             android:padding="20dp"
