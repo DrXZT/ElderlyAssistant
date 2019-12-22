@@ -31,14 +31,14 @@ import java.io.Serializable;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-public class FragmentFood2 extends BaseFragment implements View.OnClickListener {
+public class FragmentFood2 extends Fragment implements View.OnClickListener {
 
 
     protected BaseActivity mActivity;
 
-    public FragmentFood2() {
-        super(R.layout.fragment_food_2);
-    }
+//    public FragmentFood2() {
+//        super(R.layout.fragment_food_2);
+//    }
 
     @Nullable
     @Override
@@ -64,34 +64,41 @@ public class FragmentFood2 extends BaseFragment implements View.OnClickListener 
         return view;
     }
 
-    @Override
-    public void initViews() {
-    }
+//    @Override
+//    public void initViews() {
+//    }
 
 
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_porkGarlic:
-                startActivity(Food1PorkGarlicActivity.class);
+                Intent intent1 = new Intent(getActivity(), Food1PorkGarlicActivity.class);
+                startActivity(intent1);
                 break;
             case R.id.btn_beefPotato:
-                startActivity(Food1BeefPotatoActivity.class);
+                Intent intent2 = new Intent(getActivity(), Food1BeefPotatoActivity.class);
+                startActivity(intent2);
                 break;
             case R.id.btn_meantGreen:
-                startActivity(Food1LeanmeatGreenchineseonionActivity.class);
+                Intent intent3 = new Intent(getActivity(), Food1LeanmeatGreenchineseonionActivity.class);
+                startActivity(intent3);
                 break;
             case R.id.btn_sesameKelp:
-                startActivity(Food1SesameKelpActivity.class);
+                Intent intent4 = new Intent(getActivity(), Food1SesameKelpActivity.class);
+                startActivity(intent4);
                 break;
             case R.id.btn_liverSpinach:
-                startActivity(Food1LiverSpinachActivity.class);
+                Intent intent5 = new Intent(getActivity(), Food1LiverSpinachActivity.class);
+                startActivity(intent5);
                 break;
             case R.id.btn_tofuCarrot:
-                startActivity(Food1TofuCarrotActivity.class);
+                Intent intent6 = new Intent(getActivity(), Food1TofuCarrotActivity.class);
+                startActivity(intent6);
                 break;
             case R.id.btn_fragrantEgg:
-                startActivity(Food1FragrantfloweredgarlicEggActivity.class);
+                Intent intent7 = new Intent(getActivity(), Food1FragrantfloweredgarlicEggActivity.class);
+                startActivity(intent7);
                 break;
         }
     }
