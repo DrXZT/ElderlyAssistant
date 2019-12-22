@@ -9,6 +9,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -24,6 +25,7 @@ import com.asciimovie.drxzt.elderlyassistant.activity.Sports.SportsActivity;
 import com.asciimovie.drxzt.elderlyassistant.activity.food.FoodActivity;
 import com.asciimovie.drxzt.elderlyassistant.activity.main.MainActivity;
 import com.asciimovie.drxzt.elderlyassistant.activity.news.NewsActivity;
+import com.asciimovie.drxzt.elderlyassistant.activity.time.TimeSelectActivity;
 
 import org.litepal.LitePal;
 
@@ -49,6 +51,7 @@ public class MainFragment extends Fragment implements View.OnClickListener {
 
     Button button14;
 
+    View viewTime;
 
     private View contentView;
     private Context mContext;
@@ -77,6 +80,8 @@ public class MainFragment extends Fragment implements View.OnClickListener {
         button12 = view.findViewById(R.id.btn_radio);
         button13 = view.findViewById(R.id.btn_story);
 //        button14 = view.findViewById(R.id.btn_add);
+        viewTime=view.findViewById(R.id.view_timeselect);
+
 
         button7.setOnClickListener(this);
         button8.setOnClickListener(this);
@@ -86,6 +91,8 @@ public class MainFragment extends Fragment implements View.OnClickListener {
         button12.setOnClickListener(this);
         button13.setOnClickListener(this);
 //        button14.setOnClickListener(this);
+        viewTime.setOnClickListener(this);
+
         return view;
     }
 
@@ -122,6 +129,12 @@ public class MainFragment extends Fragment implements View.OnClickListener {
             case R.id.btn_news:
                 Intent intent7 = new Intent(getActivity(), NewsActivity.class);
                 startActivity(intent7);
+                break;
+
+
+            case R.id.view_timeselect:
+                Intent intent8 = new Intent(getActivity(), TimeSelectActivity.class);
+                startActivity(intent8);
                 break;
 
             default:

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,9 +15,13 @@ import com.asciimovie.drxzt.elderlyassistant.R;
 import com.asciimovie.drxzt.elderlyassistant.activity.Coummunity.CommunityActivity;
 import com.asciimovie.drxzt.elderlyassistant.activity.Sports.SportsActivity;
 //import com.asciimovie.drxzt.elderlyassistant.activity.Story.StoryActivity;
+import com.asciimovie.drxzt.elderlyassistant.activity.Story.StoryActivity;
 import com.asciimovie.drxzt.elderlyassistant.activity.food.FoodActivity;
 import com.asciimovie.drxzt.elderlyassistant.activity.news.NewsActivity;
+import com.asciimovie.drxzt.elderlyassistant.activity.time.TimeSelectActivity;
 
+
+//这个是没用的fragemnt
 
 public class FragmentMain extends Fragment implements View.OnClickListener {
 
@@ -28,6 +33,10 @@ public class FragmentMain extends Fragment implements View.OnClickListener {
     Button button11;
     Button button12;
     Button button13;
+    View viewDelet;
+    View viewAdd;
+    View viewTime;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -41,6 +50,10 @@ public class FragmentMain extends Fragment implements View.OnClickListener {
         button12 = view.findViewById(R.id.btn_radio);
         button13 = view.findViewById(R.id.btn_story);
 
+        viewDelet=view.findViewById(R.id.view_delet);
+        viewAdd=view.findViewById(R.id.view_add);
+        viewTime=view.findViewById(R.id.view_timeselect);
+
         button7.setOnClickListener(this);
         button8.setOnClickListener(this);
         button9.setOnClickListener(this);
@@ -48,6 +61,11 @@ public class FragmentMain extends Fragment implements View.OnClickListener {
         button11.setOnClickListener(this);
         button12.setOnClickListener(this);
         button13.setOnClickListener(this);
+
+        viewDelet.setOnClickListener(this);
+        viewAdd.setOnClickListener(this);
+        viewTime.setOnClickListener(this);
+
         return view;
     }
 
@@ -71,8 +89,13 @@ public class FragmentMain extends Fragment implements View.OnClickListener {
                 startActivity(intent6);
                 break;
             case R.id.btn_story:
-//                Intent intent7 = new Intent(getActivity(), StoryActivity.class);
-//                startActivity(intent7);
+                Intent intent7 = new Intent(getActivity(), StoryActivity.class);
+                startActivity(intent7);
+                break;
+            case R.id.view_timeselect:
+                Log.d("no","es");
+                Intent intent8 = new Intent(getActivity(), TimeSelectActivity.class);
+                startActivity(intent8);
                 break;
         }
     }

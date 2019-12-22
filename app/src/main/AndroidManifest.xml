@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.food.FoodCeleryActivity"></activity>
+        <activity android:name=".activity.time.TimeSelectActivity"></activity>
+        <activity android:name=".activity.food.FoodCeleryActivity" />
         <activity android:name=".fragment.AddActivity" />
         <activity android:name=".activity.food.Note2Activity" />
         <activity android:name=".activity.food.Note1Activity" /> <!-- android:appComponentFactory="" -->
@@ -31,8 +32,7 @@
         <activity android:name=".activity.Coummunity.ServiceActivity" />
         <activity android:name=".activity.Coummunity.SaleActivity" />
         <activity android:name=".activity.Coummunity.VolunteerActivity" />
-        <activity android:name=".activity.Coummunity.CommunityActivity"></activity>
-
+        <activity android:name=".activity.Coummunity.CommunityActivity" />
         <activity android:name=".activity.food.Food1PorkGarlicActivity" />
         <activity android:name=".activity.food.Food1BeefPotatoActivity" />
         <activity android:name=".activity.food.Food1LeanmeatGreenchineseonionActivity" />
@@ -40,7 +40,6 @@
         <activity android:name=".activity.food.Food1LiverSpinachActivity" />
         <activity android:name=".activity.food.Food1TofuCarrotActivity" />
         <activity android:name=".activity.food.Food1FragrantfloweredgarlicEggActivity" />
-
         <activity android:name=".activity.food.FoodActivity" />
         <activity android:name=".activity.user.LoginActivity" />
         <activity android:name=".activity.main.MainActivity">

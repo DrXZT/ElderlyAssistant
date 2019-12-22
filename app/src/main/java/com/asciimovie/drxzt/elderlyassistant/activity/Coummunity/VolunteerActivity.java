@@ -24,10 +24,10 @@ public class VolunteerActivity extends AppCompatActivity implements View.OnClick
         setContentView(R.layout.community_volunteer);
 
         view_star=findViewById(R.id.view_star);
-        view_back=findViewById(R.id.btn_back);
+        view_back=findViewById(R.id.view_back);
         ivStar=findViewById(R.id.iv_star);
 
-//        view_back.setOnClickListener(this);
+        view_back.setOnClickListener(this);
         view_star.setOnClickListener(this);
         ivStar.setSelected(false);
     }
