@@ -38,8 +38,6 @@
             app:layout_constraintLeft_toLeftOf="@id/iv_star"
             app:layout_constraintRight_toRightOf="@id/iv_star"
             app:layout_constraintBottom_toBottomOf="@id/iv_star"/>
-
-
         <ImageView
             android:id="@+id/iv_star"
             app:layout_constraintRight_toRightOf="@+id/parent"

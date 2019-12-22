@@ -43,6 +43,11 @@
         <activity android:name=".activity.food.Food1FragrantfloweredgarlicEggActivity" />
         <activity android:name=".activity.food.FoodActivity" />
         <activity android:name=".activity.user.LoginActivity" />
+        <activity android:name=".activity.news.News1Activity"/>
+        <activity android:name=".activity.news.News2Activity"/>
+        <activity android:name=".activity.news.News3Activity"/>
+        <activity android:name=".activity.news.News4Activity"/>
+        <activity android:name=".activity.news.NewsActivity"/>
         <activity android:name=".activity.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
