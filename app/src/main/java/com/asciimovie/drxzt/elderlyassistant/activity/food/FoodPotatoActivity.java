@@ -22,11 +22,11 @@ public class FoodPotatoActivity extends AppCompatActivity implements View.OnClic
         setContentView(R.layout.food_potato);
         button1 = findViewById(R.id.btn_back);
         button1.setOnClickListener(this);
-
         view_star=findViewById(R.id.view_star);
         ivStar=findViewById(R.id.iv_star);
         view_star.setOnClickListener(this);
         ivStar.setSelected(false);
+
     }
 
     @Override
